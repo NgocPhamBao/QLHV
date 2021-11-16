@@ -1,0 +1,1926 @@
+﻿
+
+@model List<QLHV.Handling.Field>
+
+<div>
+    <p style="margin:0pt">
+        <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">
+            Đơn
+            vị:
+        </span><span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold"> </span><span style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal">
+            <strong>
+                <span style="font-family:'times new roman'; font-size: 1.125em">
+                    @ViewBag.fields[0].value
+                </span>
+            </strong>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:center">
+        <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">THỐNG KÊ</span><span style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal">
+            <strong>
+                <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[1].value</span>
+            </strong>
+        </span><span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold"> </span>
+    </p>
+    <p style="margin:0pt; text-align:center">
+        <span style="font-family:'Times New Roman'; font-size:14pt; font-weight:bold">
+            Hội phụ nữ cơ sở và Công đoàn cơ
+            sở
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:center">
+        <span style="font-family:'Times New Roman'; font-size:14pt; font-style:italic">(Tính đến tháng </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <em>
+                <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[2].value</span>
+            </em>
+        </span><span style="font-family:'Times New Roman'; font-size:14pt; font-style:italic">)</span>
+    </p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAABCAYAAAA/+Zt0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAARSURBVChTYwCC/6N4qGEGBgDCE2yUekEWAwAAAABJRU5ErkJggg=="
+             width="110" height="1" alt=""
+             style="margin-left:190.45pt; margin-top:1.65pt; position:absolute; z-index:0" />
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">&#xa0;</span>
+    </p>
+    <table cellspacing="0" cellpadding="0" style="border-collapse:collapse; margin-left:0pt; width:507.15pt">
+        <thead>
+            <tr style="height:18.75pt">
+                <td colspan="2" rowspan="3"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:306.8pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Nội dung</span>
+                    </p>
+                </td>
+                <td colspan="3"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:178pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Số lượng</span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="2"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Hội viên</span>
+                    </p>
+                </td>
+                <td colspan="2"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:112.85pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Đoàn viên
+                            CĐ
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Nam</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Nữ</span>
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height:18.75pt">
+                <td rowspan="5"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">&#xa0;</span><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Số lượng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">SQ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[3].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[4].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[5].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">QNCN</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[6].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[7].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[8].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">CNVQP</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[9].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[10].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[11].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">LĐHĐ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[12].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[13].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[14].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">DT thiểu số</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[15].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[16].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[17].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="6"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Trình</span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold"> độ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Sơ cấp</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[18].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[19].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[20].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Trung cấp</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[21].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[22].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[23].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Cao đẳng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[24].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[25].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[26].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đại học</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[27].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[28].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[29].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Thạc sĩ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[30].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[31].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[32].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Tiến </span><span style="font-family:'Times New Roman'; font-size:13pt">sĩ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[33].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[34].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[35].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:17.45pt">
+                <td rowspan="5"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Danh
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">hiệu</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Trợ</span><span style="font-family:'Times New Roman'; font-size:13pt"> gi</span><span style="font-family:'Times New Roman'; font-size:13pt">ảng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[36].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[37].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[38].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Giảng viên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[39].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[40].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[41].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Giảng viên chính</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[42].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[43].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[44].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó GS</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[45].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[46].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[47].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">GS</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[48].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[49].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[50].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="6"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Bậc thợ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bậc 2</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[51].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[52].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[53].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bậc 3</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[54].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[55].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[56].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bậc 4</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[57].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[58].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[59].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bậc 5</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[60].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[61].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[62].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bậc 6</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[63].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[64].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[65].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bậc 7</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[66].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[67].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[68].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18pt">
+                <td rowspan="10"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Chức
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">danh</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">CN Khoa</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[69].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[70].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[71].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó CN Khoa</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[72].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[73].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[74].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">CN </span><span style="font-family:'Times New Roman'; font-size:13pt">Bộ môn</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[75].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[76].value</span>\
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[77].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó CN Bộ môn</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[78].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[79].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[80].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Tr</span><span style="font-family:'Times New Roman'; font-size:13pt">ư</span><span style="font-family:'Times New Roman'; font-size:13pt">ởng ph</span><span style="font-family:'Times New Roman'; font-size:13pt">òng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[81].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[82].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[83].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Ph</span><span style="font-family:'Times New Roman'; font-size:13pt">ó tr</span><span style="font-family:'Times New Roman'; font-size:13pt">ư</span><span style="font-family:'Times New Roman'; font-size:13pt">ởng ph</span><span style="font-family:'Times New Roman'; font-size:13pt">òng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[84].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[85].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[86].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Trưởng ban và tương đương</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[87].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[88].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[89].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó Trưởng ba</span><span style="font-family:'Times New Roman'; font-size:13pt">n và tương đư</span><span style="font-family:'Times New Roman'; font-size:13pt">ơng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[90].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[91].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[92].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Trợ lý</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[93].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[94].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[95].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Kỹ th</span><span style="font-family:'Times New Roman'; font-size:13pt">uật </span><span style="font-family:'Times New Roman'; font-size:13pt">viên</span><span style="font-family:'Times New Roman'; font-size:13pt"> hướng</span><span style="font-family:'Times New Roman'; font-size:13pt"> dẫn T</span><span style="font-family:'Times New Roman'; font-size:13pt">H, TN</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[96].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[97].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; border-top-color:#000000; border-top-style:solid; border-top-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[98].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.6pt">
+                <td rowspan="3"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Độ
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">tuổi</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Từ 18 - 30</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[99].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[100].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[101].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Từ 31 - 49</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[102].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[103].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[104].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">50 t</span><span style="font-family:'Times New Roman'; font-size:13pt">uổi trở lên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[105].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[106].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[107].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="3"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">Đảng viên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đả</span><span style="font-family:'Times New Roman'; font-size:13pt">ng viên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[108].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[109].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[110].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đảng viên mới kết nạp</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[111].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[112].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[113].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đang đề xuất kết</span><span style="font-family:'Times New Roman'; font-size:13pt"> nạp</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[114].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[115].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[116].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="4"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Giữ vị trí
+                            trong
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold"> Đảng uỷ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bí thư </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[117].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[118].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[119].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó bí thư</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[120].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[121].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[122].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đảng uỷ viên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[123].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[124].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[125].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Thường vụ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[126].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[127].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[128].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="3"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Giữ vị trí
+                            trong
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold"> Chi bộ</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bí thư </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[129].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[130].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[131].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó bí </span><span style="font-family:'Times New Roman'; font-size:13pt">thư</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[132].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[133].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[134].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Chi uỷ viên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[135].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[136].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[137].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="6"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Giữ vị trí
+                            trong
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            các tổ chức
+                        </span><br /><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">đ</span><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">oàn thể</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Chủ tịch</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[138].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[139].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[140].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó chủ tịch</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[141].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[142].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[143].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Uỷ</span><span style="font-family:'Times New Roman'; font-size:13pt"> viên</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[144].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[145].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[146].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Bí th</span><span style="font-family:'Times New Roman'; font-size:13pt">ư Đoàn</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[147].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[148].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[149].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Phó bí thư Đoàn</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[150].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[151].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[152].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Uỷ viên BCH Đ</span><span style="font-family:'Times New Roman'; font-size:13pt">oàn</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[153].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[154].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[155].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td rowspan="6"
+                    style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Lao động sáng
+                            tạo
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đề tài c</span><span style="font-family:'Times New Roman'; font-size:13pt">ấp Nhà nước</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[156].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[157].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[158].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đề tài cấp Bộ Quốc phòng</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[159].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[160].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[161].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đề tài cấp Học viện</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[162].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[163].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[164].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Đề tài cấp</span><span style="font-family:'Times New Roman'; font-size:13pt"> cơ sở</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[165].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[166].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[167].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">
+                            Số sáng kiến cải tiến
+                            kỹ
+                        </span><span style="font-family:'Times New Roman'; font-size:13pt"> thuật</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[168].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[169].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[170].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">Giá trị thành tiền</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[171].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[172].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[173].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-left-color:#000000; border-left-style:solid; border-left-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.03pt; padding-right:5.03pt; vertical-align:middle; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            Kết
+                            nạp
+                        </span><span style="font-family:'Times New Roman'; font-size:13pt; font-weight:bold">
+                            mới
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">&#xa0;</span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:54.35pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[174].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:50.25pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[175].value</span>
+                        </span>
+                    </p>
+                </td>
+                <td style="border-bottom-color:#000000; border-bottom-style:solid; border-bottom-width:0.75pt; border-right-color:#000000; border-right-style:solid; border-right-width:0.75pt; padding-left:5.4pt; padding-right:5.03pt; vertical-align:middle; width:51.8pt">
+                    <p style="font-size:12pt; line-height:110%; margin:0pt; text-align:center">
+                        <span style="font-family:'Times New Roman'; font-size:12pt">
+                            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[176].value</span>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height:18.75pt">
+                <td style="padding-left:5.4pt; padding-right:5.4pt; vertical-align:bottom; width:88.45pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">&#xa0;</span>
+                    </p>
+                </td>
+                <td style="padding-left:5.4pt; padding-right:5.4pt; vertical-align:bottom; width:207.55pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">&#xa0;</span>
+                    </p>
+                </td>
+                <td style="padding-left:5.4pt; padding-right:5.4pt; vertical-align:bottom; width:54.35pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">&#xa0;</span>
+                    </p>
+                </td>
+                <td style="padding-left:5.4pt; padding-right:5.4pt; vertical-align:bottom; width:50.25pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">&#xa0;</span>
+                    </p>
+                </td>
+                <td style="padding-left:5.4pt; padding-right:5.4pt; vertical-align:bottom; width:51.8pt">
+                    <p style="font-size:13pt; line-height:110%; margin:0pt">
+                        <span style="font-family:'Times New Roman'; font-size:13pt">&#xa0;</span>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+        <tr style="height:0pt">
+            <td style="width:99.25pt; border:none"></td>
+            <td style="width:218.35pt; border:none"></td>
+            <td style="width:65.15pt; border:none"></td>
+            <td style="width:61.05pt; border:none"></td>
+            <td style="width:62.6pt; border:none"></td>
+        </tr>
+    </table>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt; font-style:italic">Tình hình chung:</span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            - Hoàn cảnh gia đình:
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            + Mất chồng/vợ:
+        </span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[177].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            + Ly hôn:
+        </span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[178].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            + Nuôi con một mình
+        </span><span style="font-family:'Times New Roman'; font-size:14pt">: </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[179].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            + Bệnh hiểm nghèo, bệnh dài ngày
+        </span><span style="font-family:'Times New Roman'; font-size:14pt">:</span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[180].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            + Con mắc bệnh tự kỷ, bị bệnh về thần kinh, bệnh hiểm nghèo:
+        </span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[181].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            + Có nhà ở nhưng bị hư hỏng không có khả năng tusửa, xây lại:
+        </span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[182].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            - Số đoàn viên (hội viên) trên 35 tuổi chưa lập gia đình :
+        </span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[183].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">
+            - Số đoàn viên (hội viên) có vợ/chồng đang công tác tại Học viện:
+        </span><span style="font-family:'Times New Roman'; font-size:14pt"> </span><span style="font-family:'Times New Roman'; font-size:12pt">
+            <span style="font-family:'times new roman'; font-size: 1.125em">@ViewBag.fields[184].value</span>
+        </span>
+    </p>
+    <p style="margin:0pt; text-align:justify">
+        <span style="font-family:'Times New Roman'; font-size:14pt">&#xa0;</span>
+    </p>
+    <div style="-aw-headerfooter-type:footer-primary">
+        <p style="margin:0pt; text-align:right">
+            <span style="-aw-field-code:' PAGE   \\* MERGEFORMAT '">
+                <span style="font-family:'Times New Roman'; font-size:12pt">1</span>
+            </span>
+        </p>
+        <p style="margin:0pt 18pt 0pt 0pt">
+            <span style="font-family:'Times New Roman'; font-size:12pt">&#xa0;</span>
+        </p>
+    </div>
+</div>

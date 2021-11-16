@@ -1,0 +1,305 @@
+﻿
+@{
+    ViewBag.Title = "DanhSachTaiKhoan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main-wrapper">
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="section">
+            <div class="section-header" style="margin-bottom:2%">
+                <h1 style="margin:0; color:black">Cấp quyền tài khoản</h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="#" style="color:rgb(26, 136, 32)">Danh sách quyền tài khoản</a></div>
+                    <div class="breadcrumb-item active"><a href="Views/DanhSachHPN/DanhSachHPN" style="color:rgb(26, 136, 32)">Hội phụ nữ</a></div>
+                </div>
+            </div>
+            @{
+                if (TempData["notice"] != null)
+                {
+
+                    <div class="container mt-4">
+                        <div class="alert alert-success alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>@TempData["notice"]</strong>
+                        </div>
+                    </div>
+                }
+            }
+            <div class="section-header">
+                <div class="container">
+                    <div class="row" style="margin-top:0">
+                        <div class="col-12">
+                            <div class="card-body" style="padding:0 1%;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true" style="color:rgb(26, 136, 32); font-weight:700; font-size:18px">HV-PN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices1" role="tab" aria-controls="connectedServices" aria-selected="false" style="color:rgb(26, 136, 32); font-weight:700; font-size:18px">BCH-PN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices2" role="tab" aria-controls="connectedServices" aria-selected="false" style="color:rgb(26, 136, 32); font-weight:700; font-size:18px">HV-CD</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices3" role="tab" aria-controls="connectedServices" aria-selected="false" style="color:rgb(26, 136, 32); font-weight:700; font-size:18px">BCH-CD</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content ml-1" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+                                                <table id="myTable1" class="table table-bordered table-md" style="text-align: center;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>STT</th>
+                                                            <th>Tên đăng nhập</th>
+                                                            <th>Tên hội viên</th>
+                                                            <th>Quyền</th>
+                                                            <th>Chỉnh sửa</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @{
+                                                            int i = 0;
+                                                            foreach (var it in ViewBag.TaiKhoanHVPN)
+                                                            {
+                                                                i++;
+                                                                <tr>
+                                                                    <td>@i</td>
+                                                                    <td>@it.TenDN</td>
+                                                                    <td>@it.TenHV</td>
+                                                                    <td>@it.Roles</td>
+                                                                    <td><button class="btn btn-sm" title="Edit" data-toggle="modal" data-target="#model-donvi" onclick="onClickQuyen(`@it.TenDN`,`@it.TenHV`,`@it.MaHV`,`@it.Roles`,`@it.IDGroupUser`)"><i class="fas fa-edit"></i></button></td>
+                                                                </tr>
+                                                            }
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="connectedServices1" role="tabpanel" aria-labelledby="ConnectedServices-tab">
+                                                <table id="myTable1" class="table table-bordered table-md" style="text-align: center;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>STT</th>
+                                                            <th>Tên đăng nhập</th>
+                                                            <th>Tên hội viên</th>
+                                                            <th>Quyền</th>
+                                                            <th>Chỉnh sửa</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @{
+                                                            int j = 0;
+                                                            foreach (var it in ViewBag.TaiKhoanBCH_PN)
+                                                            {
+                                                                j++;
+                                                                <tr>
+                                                                    <td>@j</td>
+                                                                    <td>@it.TenDN</td>
+                                                                    <td>@it.TenHV</td>
+                                                                    <td>@it.Roles</td>
+                                                                    <td><button class="btn btn-sm" title="Khóa" data-toggle="modal" data-target="#model-donvi" onclick="onClickQuyen(`@it.TenDN`,`@it.TenHV`,`@it.MaHV`,`@it.Roles`,`@it.IDGroupUser`)"><i class="fas fa-edit"></i></button></td>
+                                                                </tr>
+                                                            }
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="connectedServices2" role="tabpanel" aria-labelledby="ConnectedServices-tab">
+                                                <table id="myTable1" class="table table-bordered table-md" style="text-align: center;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>STT</th>
+                                                            <th>Tên đăng nhập</th>
+                                                            <th>Tên hội viên</th>
+                                                            <th>Quyền</th>
+                                                            <th>Chỉnh sửa</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @{
+                                                            int k = 0;
+
+                                                            foreach (var it in ViewBag.TaiKhoanHVCD)
+                                                            {
+                                                                k++;
+                                                                <tr>
+                                                                    <td>@k</td>
+                                                                    <td>@it.TenDN</td>
+                                                                    <td>@it.TenHV</td>
+                                                                    <td>@it.Roles</td>
+                                                                    <td><button class="btn btn-sm" title="Khóa" data-toggle="modal" data-target="#model-donvi" onclick="onClickQuyen(`@it.TenDN`,`@it.TenHV`,`@it.MaHV`,`@it.Roles`,`@it.IDGroupUser`)"><i class="fas fa-edit"></i></button></td>
+                                                                </tr>
+                                                            }
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="connectedServices3" role="tabpanel" aria-labelledby="ConnectedServices-tab">
+                                                <table id="myTable1" class="table table-bordered table-md" style="text-align: center;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>STT</th>
+                                                            <th>Tên đăng nhập</th>
+                                                            <th>Tên hội viên</th>
+                                                            <th>Quyền</th>
+                                                            <th>Chỉnh sửa</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @{
+                                                            int l = 0;
+                                                            foreach (var it in ViewBag.TaiKhoanBCH_CD)
+                                                            {
+
+                                                                l++;
+                                                                <tr>
+                                                                    <td>@l</td>
+                                                                    <td>@it.TenDN</td>
+                                                                    <td>@it.TenHV</td>
+                                                                    <td>@it.Roles</td>
+                                                                    <td><button class="btn btn-sm" title="Khóa" data-toggle="modal" data-target="#model-donvi" onclick="onClickQuyen(`@it.TenDN`,`@it.TenHV`,`@it.MaHV`,`@it.Roles`,`@it.IDGroupUser`)"><i class="fas fa-edit"></i></button></td>
+                                                                </tr>
+                                                            }
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Add New Task -->
+<div class="modal fade" id="model-donvi" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form class="card auth_form" method="post" action="/Account/UpdateRole">
+                <div class="modal-header">
+                    <h6 class="title-modal-banve font-weight-bold" id="largeModalLabel">Cấp quyền</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="row clearfix" style="border: 3px solid #28a745">
+                        <input hidden id="TenDN" name="id[]" value="">
+                        <div style="width:50% ;float:left;padding:10px">
+                            <div class="form-group">
+                                <p><strong>Mã hội viên     : </strong></p>
+                                <span id="MaHV">Mã hội viên</span>
+                            </div>
+                        </div>
+                        <div style="width:50% ;float:left;padding:10px">
+                            <div class="form-group">
+                                <p><strong>Tên hội viên     : </strong></p>
+                                <span id="TenHV">Tên hội viên</span>
+
+                            </div>
+                        </div>
+                        <div style="width:50% ;float:left;padding:10px">
+                            <div class="form-group">
+                                <p><strong>Quyền hội viên     : </strong></p>
+                                <span id="DSQuyen">Quyền hội viên</span>
+
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <label for="">Danh sách quyền</label><br />
+                            <div class="form-group" style=" border: 1px solid #000000; overflow:hidden">
+                               
+                                <div style="width:100%; height:50%; float:left; margin-left:120px">
+                                    <input id="HVIEN" type="checkbox" onclick="KiemTra()" value="admin" name="id[]" style="margin: 20px 30px">
+                                    <label for="Dsquyen">Admin</label><br />
+                                </div>
+                                <div style="width:50%; height:50%; float:left">
+                                    <label for="Dsquyen"><strong style="margin-left: 40px; color:#28a745">Phụ nữ</strong></label><br />
+                                </div>
+                                <div style="width:50%; height:50%; float:left;">
+                                    <label for="Dsquyen"><strong style="margin-left: 60px; color:#28a745">Công đoàn</strong></label><br />
+                                </div>
+                                <div style="width:50%; height:50%; float:left;">
+                                    <input id="HVPN" type="checkbox" onclick="KiemTra()" value="HVPN" name="id[]" style="margin: 20px 30px">
+                                    <label for="Dsquyen">Hội viên</label><br />
+                                </div>       
+                                <div style="width:50%; height:50%; float:left;">
+                                    <input id="HVCD" type="checkbox" onclick="KiemTra()" value="HVCD" name="id[]" style="margin: 20px 30px">
+                                    <label for="Dsquyen">Hội viên</label><br />
+                                </div>
+                                <div style="width:50%; height:50%; float:left;">
+                                    <input id="BCH_PN" type="checkbox" onclick="KiemTra()" value="BCH_PN" name="id[]" style="margin: 20px 30px">
+                                    <label for="Dsquyen">Ban Chấp hành</label><br />
+                                </div>
+                                <div style="width:50%; height:50%; float:left;">
+                                    <input id="BCH_CD" type="checkbox" onclick="KiemTra()" value="BCH_CD" name="id[]" style="margin: 20px 30px">
+                                    <label for="Dsquyen">Ban chấp hành</label><br />
+                                </div>
+                                    
+
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" @*data-dismiss="modal" id="btn-success-modal"*@ style="background: #28a745">Cập nhật</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+    function onClickQuyen(_TenDN, _TenHV, _MaHV, _DSQuyen,_idGroupUser) {
+        console.log(_TenHV);
+        $('#TenDN').val(_TenDN);
+        $('#MaHV').text(_MaHV);
+        $('#TenHV').text(_TenHV);
+        $('#DSQuyen').text(_DSQuyen);
+        console.log(_idGroupUser);
+        $('input[type=checkbox]').each(function () {
+            $(this).prop('checked', false);
+        })
+        var Quyen = _DSQuyen.split(',');
+        $(Quyen).each(function (index, value) {
+            $('#' + value).prop('checked', true);
+        })
+    }
+
+    function KiemTra() {
+        if ($('#HVIEN').prop('checked')) {
+            console.log($('#admin').prop('checked'))
+            $('#HVPN').prop('checked', false);
+            $('#HVCD').prop('checked', false);
+            $('#BCH_PN').prop('checked', false);
+            $('#BCH_CD').prop('checked', false);
+        }
+        if ($('#HVPN').prop('checked')) {
+            $('#HVIEN').prop('checked', false);
+            $('#BCH_PN').prop('checked', false);
+        }
+        if ($('#BCH_PN').prop('checked')) {
+            $('#HVIEN').prop('checked', false);
+            $('#HVPN').prop('checked', false);
+        }
+        if ($('#HVCD').prop('checked')) {
+            $('#HVIEN').prop('checked', false);
+            $('#BCH_CD').prop('checked', false);
+        }
+        if ($('#BCH_CD').prop('checked')) {
+            $('#HVIEN').prop('checked', false);
+            $('#HVCD').prop('checked', false);
+        }
+            
+    }
+</script>

@@ -1,0 +1,244 @@
+﻿@using QLHV.Models.Repository.BaoCaoRes;
+@using Newtonsoft.Json;
+@{
+    ViewBag.Title = "BaoCaoTheoNamHienTai";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="app" style="color: #000;">
+    <div class="main-wrapper">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+
+                <div class="section-header">
+                    <h1>Báo cáo thống kê</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="../BaoCao/ReportQuarter" style="color:rgba(40, 163, 40, 0.8)">Đến quý hiện tại</a></div>
+                        <div class="breadcrumb-item active"><a href="#" style="color:rgba(40, 163, 40, 0.8)">Đến năm hiện tại</a></div>
+                    </div>
+                </div>
+
+                <div class="section-body" style="background-color:white">
+
+                    <div class="col-lg-12" style="padding-top: 40px; display: flex;">
+                        <div class="form-group col-lg-1 text-uppercase text-right" style="padding: 15px 5px 5px 5px;">
+                            <h6>Đơn vị </h6>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group col-lg-12 text-uppercase text-right">
+
+                                <select id="chonHoi" onchange="ChonHoi(this)" value="" aria-controls="dataTables-example" class="form-control input-sm">
+                                    <option selected disabled hidden>-- Chọn đơn vị --</option>
+                                    <optgroup label="Học viện">
+                                        @foreach (Hoi hoi in @ViewBag.DSHoi)
+                                        {
+                                            if (hoi.LoaiHoi == 0)
+                                            {
+                                                <option id="@hoi" value="@JsonConvert.SerializeObject(hoi)">@hoi.TenHoi</option>
+                                            }
+
+                                        }
+                                    </optgroup>
+                                    <optgroup label="Hội phụ nữ">
+                                        @foreach (Hoi hoi in @ViewBag.DSHoi)
+                                        {
+                                            if (hoi.LoaiHoi == 1)
+                                            {
+                                                <option id="@hoi" value="@JsonConvert.SerializeObject(hoi)">@hoi.TenHoi</option>
+                                            }
+
+                                        }
+                                    </optgroup>
+                                    <optgroup label="Công đoàn">
+                                        @foreach (Hoi hoi in @ViewBag.DSHoi)
+                                        {
+                                            if (hoi.LoaiHoi == 2)
+                                            {
+                                                <option id="@hoi" value="@JsonConvert.SerializeObject(hoi)">@hoi.TenHoi</option>
+                                            }
+
+                                        }
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--<div class="col-lg-3">
+
+                            <div class="form-group col-lg-4  text-uppercase text-left" style="padding: 5px 5px;">
+                                <label>Tính Đến</label>
+                            </div>
+                            <div class="form-group col-lg-4 ">
+                                <p id="current-time"></p>
+                                <script>
+                                    var curDate = new Date();
+
+                                    // Ngày hiện tại
+                                    var curDay = curDate.getDate();
+
+                                    // Tháng hiện tại
+                                    var curMonth = curDate.getMonth() + 1;
+
+                                    // Năm hiện tại
+                                    var curYear = curDate.getFullYear();
+
+                                    // Gán vào thẻ HTML
+                                    document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-raised btn-primary text-uppercase">
+                                <i class="fa fa-check-square-o"></i> Tải Xuống
+                            </button>
+                        </div>-->
+                        <div class="col-lg-7">
+                            <div class="dt-buttons btn-group flex-wrap" style="float: right;">
+                                <button id="btnChot" class="btn btn-secondary buttons-html5 btn-success btn-md " tabindex="0" aria-controls="baoCao" type="button" disabled onclick="ChotBaoCao();">
+                                    <span>Chốt</span>
+                                </button>
+                                <button id="btnXuatWord" class="btn btn-secondary buttons-html5 btn-success btn-md " tabindex="0" aria-controls="baoCao" type="button" disabled onclick="exportHTML();">
+                                    <span>Xuất file word</span>
+                                </button>
+                                <button id="btnIn" class="btn btn-secondary buttons-html5 btn-success btn-md " tabindex="0" aria-controls="baoCao" type="button" disabled onclick="In_Content('secBaoCao')">
+                                    <span>In</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12" style="background-color:white; margin: auto; padding-top:30px">
+                        <article id="secBaoCao">
+                            <div id="baoCao" style=" width: fit-content; margin-left: calc(50% - 340px);">
+
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+<script language="javascript">
+    function ChonHoi(obj) {
+        var HOI = JSON.parse(obj.value);
+        console.log(HOI.Ma);
+        console.log(HOI.LoaiHoi);
+        console.log(HOI.TenHoi);
+
+        $('#baoCao').empty();
+        $('#btnChot').prop('disabled', true);
+        $('#btnXuatWord').prop('disabled', true);
+        $('#btnIn').prop('disabled', true);
+
+        $.ajax({
+            url: '/BaoCao/BaoCaoHienTai',
+            type: 'POST',
+            data: { hoi: HOI, theoNam: true },
+            success: function (response) {
+                console.log("thanh cong");
+                $('#baoCao').empty();
+                $('#baoCao').html(response);
+                LoadBtnChot();
+                $('#btnXuatWord').prop('disabled', false);
+                $('#btnIn').prop('disabled', false);
+                
+            },
+            error: function (data) {
+                console.log("err" + data);
+            }
+        });
+
+
+    }
+</script>
+
+<script>
+    function LoadBtnChot()
+    {
+        var obj = $('#chonHoi');
+        var HOI = JSON.parse(obj[0].value);
+        $.ajax({
+            url: '/BaoCao/DaChotHT',
+            type: 'POST',
+            data: { hoi: HOI, theoNam : true},
+            success: function (response) {
+                console.log(response);
+                if (response == 0) $('#btnChot').prop('disabled', false);
+                else $('#btnChot').prop('disabled', true);
+
+            },
+            error: function (data) {
+                console.log("err" + data);
+            }
+        });
+    }
+</script>
+
+<script>
+    function exportHTML() {
+        var header = "<header xmlsn:o= 'urn:schemas-microsoft-com:office:office' " +
+            "xmlns:w='urn:schemas-microsoft-com:office:word' " +
+            "xmlns='http://www.w3.org/TR/REC-html40'>" +
+            "<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScrip</title></head><body>";
+        var footer = "</body></html>";
+        var sourceHTML = header + document.getElementById("baoCao").innerHTML + footer;
+        var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+        var fileDownload = document.createElement("a");
+        document.body.appendChild(fileDownload);
+        fileDownload.href = source;
+        fileDownload.download = 'BaoCaoQuy' + '.doc';
+        fileDownload.click();
+        document.body.removeChild(fileDownload);
+
+    }
+</script>
+
+<script>
+    function In_Content(strid) {
+        var prtContent = document.getElementById(strid);
+        var WinPrint = window.open('', '', 'letf=0,top=0,width=800,height=800');
+        WinPrint.document.write(prtContent.innerHTML);
+        WinPrint.document.close();
+        WinPrint.focus();
+        WinPrint.print();
+    }
+</script>
+
+<script>
+    function ChotBaoCao()
+    {
+        var obj = $('#chonHoi');
+        var HOI = JSON.parse(obj[0].value);
+
+        console.log(HOI.Ma);
+        console.log(HOI.LoaiHoi);
+        console.log(HOI.TenHoi);
+        if (confirm("Bạn có chắc chắn muốn chốt báo cáo không? Bấm OK để xác nhận!"))
+        {
+            $.ajax({
+                url: '/BaoCao/ChotBaoCao',
+                type: 'POST',
+                data: { hoi: HOI, theoNam: true },
+                success: function (response) {
+                    console.log("thanh cong");
+                    $('#btnChot').prop('disabled', true);
+                    //toastSuccess("Đã chốt báo cáo!");
+                    alert("Đã chốt báo cáo thành công!");
+                },
+                error: function (data) {
+                    console.log("err" + data);
+                    //toastError("Hủy chốt không thành công!");
+                    alert("Chốt báo cáo không thành công!");
+                }
+            });
+        }
+    }
+</script>

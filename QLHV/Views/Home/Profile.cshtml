@@ -1,0 +1,161 @@
+﻿@using QLHV.Models.ViewModels.QuanLyhoiVien;
+@model CTHV_ThongTinCaNhan
+@{
+    var LSCB = ViewBag.LSCB as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_CapBac>;
+    var LSCD = ViewBag.LSCD as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_ChucDanh>;
+    var LSDH = ViewBag.LSDH as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_DanhHieu>;
+    var LSTD = ViewBag.LSTD as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_TrinhDo>;
+    var HCGD = ViewBag.HCGD as QLHV.Models.Context.HoanCanhGD;
+    var LDST = ViewBag.HCGD as QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_LDST;
+}
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="app">
+    <div class="main-wrapper">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+                <div class="section-header">
+                    <h1>Hồ sơ cá nhân</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="#" style="color:rgba(40, 163, 40, 0.8)">Quản lý hồ sơ</a></div>
+                        <div class="breadcrumb-item active"><a href="#" style="color:rgba(40, 163, 40, 0.8)">Thông tin hồ sơ</a></div>
+                    </div>
+                </div>
+                <div class="section-body" style="background-color: white">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card" style="margin:8%">
+                                @if (Model.Anh == null)
+                                {
+                                    <img src="~/Models/ImageFile/tải xuống.png" style="margin:8% 2%" />
+                                }
+                                else
+                                {
+                                    <image id="profileImage" src="@Url.Content(@Model.Anh)" style="margin:8% 2%" />
+                                }
+
+                                <h4 style="color:black; font-weight:700;font-family:'Times New Roman'; font-size:16px; text-align:center; margin:10%">ẢNH ĐẠI DIỆN</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="section-body">
+                                <p class="section-lead" style="font-size:18px; margin-left:1%; margin-top:15px">
+                                    THÔNG TIN TIỂU SỬ
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-id-card" style="font-size:16px"></i> tên đầy đủ :<span>@Model.MaHV</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-graduation-cap" style="font-size:16px"></i> <span>Học công nghệ thông tin tại Bách Khoa Hà Nội</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-graduation-cap" style="font-size:16px"></i> <span>Từng học tại THPT Tôn Thất Thắng</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-user-graduate" style="font-size:16px"></i> <span>thành tích Bằng Tiễn Sỹ</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-home" style="font-size:16px"></i> <span>Sống tại Hà Nội</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas falocation-arrow" style="font-size:16px"></i> <span>Đến từ Nam Đàn, Nghệ An, Việt Nam</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-venus-mars" style="font-size:16px"></i> <span>Tình trạng hôn nhân</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class="section-lead" style="font-size:18px; margin-left:1%">
+                                    THÔNG TIN CÔNG TÁC HIỆN TẠI
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-graduation-cap" style="font-size:16px"></i> <span>Đang làm việc tại Học Viện Kỹ Thuật Quân Sự</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-graduation-cap" style="font-size:16px"></i> Số điện thoại <span>@Model.SDT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-graduation-cap" style="font-size:16px"></i> Email <span>@Model.Email</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-user-tie" style="font-size:16px"></i> Chức vụ <span>@Model.TenVTDT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-users" style="font-size:16px"></i> Thành viên <span>@Model.TenCD</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <a href="#" class="nav-link has-dropdown" style="color:rgb(85, 191, 63)"><i class="fas fa-undo-alt" style="font-size:16px"></i> Thành viên <span>@Model.TenHPN</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</div>
+
+
+
+

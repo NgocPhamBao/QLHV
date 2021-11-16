@@ -1,0 +1,1103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F068933-CCEF-4BF3-9C72-87A1E603FD1B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLHV</RootNamespace>
+    <AssemblyName>QLHV</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44336</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=21.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.Words.21.10.0\lib\net461\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words.Pdf2Word, Version=21.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.Words.21.10.0\lib\net461\Aspose.Words.Pdf2Word.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Common\CommonConstants.cs" />
+    <Compile Include="Common\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Common\CustomPrincipal.cs" />
+    <Compile Include="Common\SessionPersister.cs" />
+    <Compile Include="Common\UserLogin.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaoCaoController.cs" />
+    <Compile Include="Controllers\CapLaiMatKhauController.cs" />
+    <Compile Include="Controllers\DanhSachCDController.cs" />
+    <Compile Include="Controllers\DanhSachHPNController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LienHeController.cs" />
+    <Compile Include="Controllers\QuanLyHoiVienController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handling\Export.cs" />
+    <Compile Include="Handling\Field.cs" />
+    <Compile Include="Models\Context\BaoCao.cs" />
+    <Compile Include="Models\Context\BCH_HCD.cs" />
+    <Compile Include="Models\Context\BCH_HPN.cs" />
+    <Compile Include="Models\Context\CapBac.cs" />
+    <Compile Include="Models\Context\CapLaiMatKhau.cs" />
+    <Compile Include="Models\Context\ChiBo.cs" />
+    <Compile Include="Models\Context\ChucDanh.cs" />
+    <Compile Include="Models\Context\DangUy.cs" />
+    <Compile Include="Models\Context\DanhHieu.cs" />
+    <Compile Include="Models\Context\DonVi.cs" />
+    <Compile Include="Models\Context\GroupUser.cs" />
+    <Compile Include="Models\Context\HoanCanhGD.cs" />
+    <Compile Include="Models\Context\HoiCongDoan.cs" />
+    <Compile Include="Models\Context\HoiPhuNu.cs" />
+    <Compile Include="Models\Context\HoiVien.cs" />
+    <Compile Include="Models\Context\HoiVien_LDST.cs" />
+    <Compile Include="Models\Context\LaoDongSangTao.cs" />
+    <Compile Include="Models\Context\LichSuCapBac.cs" />
+    <Compile Include="Models\Context\LichSuChucDanh.cs" />
+    <Compile Include="Models\Context\LichSuDanhHieu.cs" />
+    <Compile Include="Models\Context\LichSuTrinhDo.cs" />
+    <Compile Include="Models\Context\LoaiDangVien.cs" />
+    <Compile Include="Models\Context\LoaiHoiVien.cs" />
+    <Compile Include="Models\Context\LoaiLDST.cs" />
+    <Compile Include="Models\Context\MyContext.cs" />
+    <Compile Include="Models\Context\PhanQuyen.cs" />
+    <Compile Include="Models\Context\Quyen.cs" />
+    <Compile Include="Models\Context\SoLieu.cs" />
+    <Compile Include="Models\Context\TaiKhoan.cs" />
+    <Compile Include="Models\Context\ToChucDoanThe.cs" />
+    <Compile Include="Models\Context\TrinhDo.cs" />
+    <Compile Include="Models\Repository\AccountRep\AccountReposi.cs" />
+    <Compile Include="Models\Repository\BaoCaoRes\BaoCaoRes.cs" />
+    <Compile Include="Models\Repository\BaoCaoRes\Hoi.cs" />
+    <Compile Include="Models\Repository\CapMatKhau\CapLaiMatKhauRepository.cs" />
+    <Compile Include="Models\Repository\DanhSachCacHoi\DanhSachCacHoi.cs" />
+    <Compile Include="Models\Repository\LienHe\LienHeRepository.cs" />
+    <Compile Include="Models\Repository\QuanLyHoiVien\ChiTietHoiVien.cs" />
+    <Compile Include="Models\Repository\QuanLyHoiVien\DanhSachHoiVien.cs" />
+    <Compile Include="Models\ViewModels\Account\AccountRole.cs" />
+    <Compile Include="Models\ViewModels\Account\AccountView.cs" />
+    <Compile Include="Models\ViewModels\Account\AccountViewItem.cs" />
+    <Compile Include="Models\ViewModels\CapMatKhau\CapMatKhauView.cs" />
+    <Compile Include="Models\ViewModels\DanhSachCacHoi\BanChapHanh.cs" />
+    <Compile Include="Models\ViewModels\DanhSachCacHoi\DB_BanChapHanh.cs" />
+    <Compile Include="Models\ViewModels\DanhSachCacHoi\DanhSachCD.cs" />
+    <Compile Include="Models\ViewModels\DanhSachCacHoi\DanhSachHPN.cs" />
+    <Compile Include="Models\ViewModels\LienHe\LienHeView.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_CapBac.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_ChucDanh.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_DanhHieu.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_LDST.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_ThongTinCaNhan.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_ThongTinCaNhanPost.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_ThongTinCaNhan_Update.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_TrinhDo.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\DanhSachHV.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\ThemMoiHoiVien.cs" />
+    <Compile Include="Models\ViewModels\QuanLyhoiVien\ThemMoiHoiVienPost.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cdn.datatables.net_1.11.3_css_dataTables.bootstrap4.min.css" />
+    <Content Include="Content\cdn.datatables.net_buttons_2.0.1_css_buttons.bootstrap4.min.css" />
+    <Content Include="Content\cdnjs.cloudflare.com_ajax_libs_jquery-sparklines_2.1.2_jquery.sparkline.min.js" />
+    <Content Include="Content\cdnjs.cloudflare.com_ajax_libs_moment.js_2.24.0_moment.min.js" />
+    <Content Include="Content\Chocolat-1.0.4\.gitignore" />
+    <Content Include="Content\Chocolat-1.0.4\.prettierrc.js" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\1.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\1280x720.png" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\1920x1080.png" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\2.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\3.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\320x180.png" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\4.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\5.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\6.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\640x360.png" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\7.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\75x50.png" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\8.jpg" />
+    <Content Include="Content\Chocolat-1.0.4\demo\demo-images\960x540.png" />
+    <Content Include="Content\Chocolat-1.0.4\demo\index.html" />
+    <Content Include="Content\Chocolat-1.0.4\dist\css\chocolat.css" />
+    <Content Include="Content\Chocolat-1.0.4\dist\images\close.png" />
+    <Content Include="Content\Chocolat-1.0.4\dist\images\fullscreen-black.png" />
+    <Content Include="Content\Chocolat-1.0.4\dist\images\fullscreen.png" />
+    <Content Include="Content\Chocolat-1.0.4\dist\images\left.png" />
+    <Content Include="Content\Chocolat-1.0.4\dist\images\loader.gif" />
+    <Content Include="Content\Chocolat-1.0.4\dist\images\right.png" />
+    <Content Include="Content\Chocolat-1.0.4\dist\js\chocolat.cjs.js" />
+    <Content Include="Content\Chocolat-1.0.4\dist\js\chocolat.esm.js" />
+    <Content Include="Content\Chocolat-1.0.4\dist\js\chocolat.iife.js" />
+    <Content Include="Content\Chocolat-1.0.4\dist\js\chocolat.js" />
+    <Content Include="Content\Chocolat-1.0.4\rollup.config.js" />
+    <Content Include="Content\Chocolat-1.0.4\src\css\chocolat.css" />
+    <Content Include="Content\Chocolat-1.0.4\src\images\close.png" />
+    <Content Include="Content\Chocolat-1.0.4\src\images\fullscreen-black.png" />
+    <Content Include="Content\Chocolat-1.0.4\src\images\fullscreen.png" />
+    <Content Include="Content\Chocolat-1.0.4\src\images\left.png" />
+    <Content Include="Content\Chocolat-1.0.4\src\images\loader.gif" />
+    <Content Include="Content\Chocolat-1.0.4\src\images\right.png" />
+    <Content Include="Content\Chocolat-1.0.4\src\js\chocolat.js" />
+    <Content Include="Content\Chocolat-1.0.4\src\js\main.esm.js" />
+    <Content Include="Content\Chocolat-1.0.4\src\js\main.iife.js" />
+    <Content Include="Content\Chocolat-1.0.4\src\js\utils.js" />
+    <Content Include="Content\Chocolat-1.0.4\test\index.html" />
+    <Content Include="Content\Chocolat-1.0.4\test\test.js" />
+    <Content Include="Content\css\components.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\reverse.css" />
+    <Content Include="Content\css\rtl.css" />
+    <Content Include="Content\css\skins\reverse.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\fonts\nunito-v9-latin-600.svg" />
+    <Content Include="Content\fonts\nunito-v9-latin-700.svg" />
+    <Content Include="Content\fonts\nunito-v9-latin-800.svg" />
+    <Content Include="Content\fonts\nunito-v9-latin-regular.svg" />
+    <Content Include="Content\fonts\vazir\font-face.css" />
+    <Content Include="Content\fonts\vazir\sample.png" />
+    <Content Include="Content\images.png" />
+    <Content Include="Content\img\avatar\avatar-1.png" />
+    <Content Include="Content\img\avatar\avatar-2.png" />
+    <Content Include="Content\img\avatar\avatar-3.png" />
+    <Content Include="Content\img\avatar\avatar-4.png" />
+    <Content Include="Content\img\avatar\avatar-5.png" />
+    <Content Include="Content\img\drawkit\drawkit-full-stack-man-colour.svg" />
+    <Content Include="Content\img\drawkit\drawkit-mobile-article-colour.svg" />
+    <Content Include="Content\img\drawkit\drawkit-nature-man-colour.svg" />
+    <Content Include="Content\img\drawkit\revenue-graph-colour.svg" />
+    <Content Include="Content\img\example-image-50.jpg" />
+    <Content Include="Content\img\example-image.jpg" />
+    <Content Include="Content\img\news\img01.jpg" />
+    <Content Include="Content\img\news\img02.jpg" />
+    <Content Include="Content\img\news\img03.jpg" />
+    <Content Include="Content\img\news\img04.jpg" />
+    <Content Include="Content\img\news\img05.jpg" />
+    <Content Include="Content\img\news\img06.jpg" />
+    <Content Include="Content\img\news\img07.jpg" />
+    <Content Include="Content\img\news\img08.jpg" />
+    <Content Include="Content\img\news\img09.jpg" />
+    <Content Include="Content\img\news\img10.jpg" />
+    <Content Include="Content\img\news\img11.jpg" />
+    <Content Include="Content\img\news\img12.jpg" />
+    <Content Include="Content\img\news\img13.jpg" />
+    <Content Include="Content\img\news\img14.jpg" />
+    <Content Include="Content\img\news\img15.jpg" />
+    <Content Include="Content\img\news\img16.jpg" />
+    <Content Include="Content\img\news\img17.jpg" />
+    <Content Include="Content\img\nuquannhan.jpg" />
+    <Content Include="Content\img\p-250.png" />
+    <Content Include="Content\img\p-50.png" />
+    <Content Include="Content\img\products\product-1-50.png" />
+    <Content Include="Content\img\products\product-1.jpg" />
+    <Content Include="Content\img\products\product-2-50.png" />
+    <Content Include="Content\img\products\product-2.jpg" />
+    <Content Include="Content\img\products\product-3-50.png" />
+    <Content Include="Content\img\products\product-3.jpg" />
+    <Content Include="Content\img\products\product-4-50.png" />
+    <Content Include="Content\img\products\product-4.jpg" />
+    <Content Include="Content\img\products\product-5-50.png" />
+    <Content Include="Content\img\products\product-5.jpg" />
+    <Content Include="Content\img\stisla-fill.svg" />
+    <Content Include="Content\img\stisla-light.svg" />
+    <Content Include="Content\img\stisla-transparent.svg" />
+    <Content Include="Content\img\stisla.svg" />
+    <Content Include="Content\img\unsplash\andre-benz-1214056-unsplash.jpg" />
+    <Content Include="Content\img\unsplash\eberhard-grossgasteiger-1207565-unsplash.jpg" />
+    <Content Include="Content\img\unsplash\login-bg.jpg" />
+    <Content Include="Content\jquery.nicescroll-3.7.6\dist\jquery.nicescroll.js" />
+    <Content Include="Content\jquery.nicescroll-3.7.6\dist\jquery.nicescroll.min.js" />
+    <Content Include="Content\jquery.nicescroll-3.7.6\dist\zoomico.png" />
+    <Content Include="Content\jquery.nicescroll-3.7.6\jquery.nicescroll.js" />
+    <Content Include="Content\js\cdn.datatables.net_1.11.3_js_dataTables.bootstrap4.min.js" />
+    <Content Include="Content\js\cdn.datatables.net_1.11.3_js_jquery.dataTables.min.js" />
+    <Content Include="Content\js\cdn.datatables.net_buttons_2.0.1_js_buttons.bootstrap4.min.js" />
+    <Content Include="Content\js\cdn.datatables.net_buttons_2.0.1_js_buttons.colVis.min.js" />
+    <Content Include="Content\js\cdn.datatables.net_buttons_2.0.1_js_buttons.html5.min.js" />
+    <Content Include="Content\js\cdn.datatables.net_buttons_2.0.1_js_buttons.print.min.js" />
+    <Content Include="Content\js\cdn.datatables.net_buttons_2.0.1_js_dataTables.buttons.min.js" />
+    <Content Include="Content\js\cdnjs.cloudflare.com_ajax_libs_jqvmap_1.5.1_jquery.vmap.min.js" />
+    <Content Include="Content\js\cdnjs.cloudflare.com_ajax_libs_jszip_3.1.3_jszip.min.js" />
+    <Content Include="Content\js\cdnjs.cloudflare.com_ajax_libs_pdfmake_0.1.53_pdfmake.min.js" />
+    <Content Include="Content\js\cdnjs.cloudflare.com_ajax_libs_pdfmake_0.1.53_vfs_fonts.js" />
+    <Content Include="Content\js\cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.7_umd_popper.min.js" />
+    <Content Include="Content\js\code.jquery.com_jquery-3.3.1.min.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\jquery-3.6.0.js" />
+    <Content Include="Content\js\page\auth-register.js" />
+    <Content Include="Content\js\page\bootstrap-modal.js" />
+    <Content Include="Content\js\page\components-chat-box.js" />
+    <Content Include="Content\js\page\components-multiple-upload.js" />
+    <Content Include="Content\js\page\components-statistic.js" />
+    <Content Include="Content\js\page\components-table.js" />
+    <Content Include="Content\js\page\components-user.js" />
+    <Content Include="Content\js\page\features-post-create.js" />
+    <Content Include="Content\js\page\features-posts.js" />
+    <Content Include="Content\js\page\features-setting-detail.js" />
+    <Content Include="Content\js\page\forms-advanced-forms.js" />
+    <Content Include="Content\js\page\gmaps-advanced-route.js" />
+    <Content Include="Content\js\page\gmaps-draggable-marker.js" />
+    <Content Include="Content\js\page\gmaps-geocoding.js" />
+    <Content Include="Content\js\page\gmaps-geolocation.js" />
+    <Content Include="Content\js\page\gmaps-marker.js" />
+    <Content Include="Content\js\page\gmaps-multiple-marker.js" />
+    <Content Include="Content\js\page\gmaps-route.js" />
+    <Content Include="Content\js\page\gmaps-simple.js" />
+    <Content Include="Content\js\page\index-0.js" />
+    <Content Include="Content\js\page\index.js" />
+    <Content Include="Content\js\page\modules-calendar.js" />
+    <Content Include="Content\js\page\modules-chartjs.js" />
+    <Content Include="Content\js\page\modules-datatables.js" />
+    <Content Include="Content\js\page\modules-ion-icons.js" />
+    <Content Include="Content\js\page\modules-slider.js" />
+    <Content Include="Content\js\page\modules-sparkline.js" />
+    <Content Include="Content\js\page\modules-sweetalert.js" />
+    <Content Include="Content\js\page\modules-toastr.js" />
+    <Content Include="Content\js\page\modules-vector-map.js" />
+    <Content Include="Content\js\page\utilities-contact.js" />
+    <Content Include="Content\js\scripts.js" />
+    <Content Include="Content\js\stisla.js" />
+    <Content Include="Content\Login\css\bootstrap.min.css" />
+    <Content Include="Content\Login\css\style.min.css" />
+    <Content Include="Content\Login\img\Logo_MTA_new.png" />
+    <Content Include="Content\Login\img\signin.svg" />
+    <Content Include="Content\Login\Js\libscripts.bundle.js" />
+    <Content Include="Content\Login\Js\vendorscripts.bundle.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\.gitattributes" />
+    <Content Include="Content\OwlCarousel2-2.3.4\.gitignore" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\ajax-loader.gif" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\assets\owl.video.play.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\owl.carousel.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\owl.carousel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\css\animate.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\css\docs.theme.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\bird_blue_32.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\download.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-drag.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-modern.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-module.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-options.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-responsive.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\feature-zombie.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\owl-logo.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\img\twitter_25.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\js\app.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\js\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\highlight.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\animate.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\autoheight.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\autoplay.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\autowidth.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\basic.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\center.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\demos.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\events.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\lazyLoad.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\merge.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\mousewheel.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\responsive.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\rtl.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\stagepadding.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\test.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\urlhashnav.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\demos\video.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\api-classes.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\api-events.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\api-options.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-buildin-plugins.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-external.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-plugin-api.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\dev-styles.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\started-faq.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\started-installation.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\started-welcome.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\support-changelog.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\support-contact.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\docs\support-contributing.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\index.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\css\animate.css" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\bird_blue_32.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\download.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-drag.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-modern.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-module.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-options.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-responsive.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\feature-zombie.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\owl-logo.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\img\twitter_25.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\js\app.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\js\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\foundation.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\highlight.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\helpers\modulo.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\helpers\test.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\Gruntfile.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\img\ajax-loader.gif" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\img\owl.video.play.png" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.animate.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.autoheight.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.autoplay.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.autorefresh.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.carousel.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.hash.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.lazyload.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.navigation.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.support.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.support.modernizr.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\owl.video.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\test\index.html" />
+    <Content Include="Content\OwlCarousel2-2.3.4\test\unit\autoplay.js" />
+    <Content Include="Content\OwlCarousel2-2.3.4\test\unit\core.js" />
+    <Content Include="Content\Setting\css\bootstrap.min.css" />
+    <Content Include="Content\Setting\css\footable.bootstrap.min.css" />
+    <Content Include="Content\Setting\css\footable.standalone.min.css" />
+    <Content Include="Content\Setting\css\style.min.css" />
+    <Content Include="Content\Setting\footable.bundle.js" />
+    <Content Include="Content\Setting\libscripts.bundle.js" />
+    <Content Include="Content\Setting\mainscripts.bundle.js" />
+    <Content Include="Content\Setting\vendorscripts.bundle.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ar-AR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ar-AR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ar-AR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-az-AZ.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-az-AZ.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-az-AZ.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-bg-BG.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-bg-BG.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-bg-BG.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ca-ES.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ca-ES.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ca-ES.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-cs-CZ.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-cs-CZ.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-cs-CZ.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-da-DK.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-da-DK.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-da-DK.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-de-DE.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-de-DE.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-de-DE.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-el-GR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-el-GR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-el-GR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-es-ES.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-es-ES.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-es-ES.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-es-EU.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-es-EU.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-es-EU.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fa-IR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fa-IR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fa-IR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fi-FI.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fi-FI.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fi-FI.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fr-FR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fr-FR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-fr-FR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-gl-ES.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-gl-ES.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-gl-ES.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-he-IL.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-he-IL.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-he-IL.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-hr-HR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-hr-HR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-hr-HR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-hu-HU.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-hu-HU.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-hu-HU.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-id-ID.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-id-ID.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-id-ID.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-it-IT.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-it-IT.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-it-IT.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ja-JP.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ja-JP.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ja-JP.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ko-KR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ko-KR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ko-KR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-lt-LT.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-lt-LT.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-lt-LT.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-lt-LV.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-lt-LV.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-lt-LV.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-mn-MN.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-mn-MN.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-mn-MN.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-nb-NO.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-nb-NO.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-nb-NO.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-nl-NL.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-nl-NL.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-nl-NL.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pl-PL.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pl-PL.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pl-PL.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pt-BR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pt-BR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pt-BR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pt-PT.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pt-PT.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-pt-PT.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ro-RO.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ro-RO.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ro-RO.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ru-RU.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ru-RU.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ru-RU.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sk-SK.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sk-SK.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sk-SK.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sl-SI.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sl-SI.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sl-SI.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sr-RS-Latin.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sr-RS-Latin.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sr-RS-Latin.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sr-RS.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sr-RS.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sr-RS.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sv-SE.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sv-SE.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-sv-SE.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ta-IN.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ta-IN.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-ta-IN.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-th-TH.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-th-TH.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-th-TH.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-tr-TR.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-tr-TR.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-tr-TR.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-uk-UA.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-uk-UA.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-uk-UA.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-uz-UZ.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-uz-UZ.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-uz-UZ.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-vi-VN.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-vi-VN.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-vi-VN.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-zh-CN.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-zh-CN.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-zh-CN.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-zh-TW.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-zh-TW.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\lang\summernote-zh-TW.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\plugin\bootstrap.min.css" />
+    <Content Include="Content\summernote-0.8.18-dist\plugin\databasic\summernote-ext-databasic.css" />
+    <Content Include="Content\summernote-0.8.18-dist\plugin\databasic\summernote-ext-databasic.js" />
+    <Content Include="Content\summernote-0.8.18-dist\plugin\hello\summernote-ext-hello.js" />
+    <Content Include="Content\summernote-0.8.18-dist\plugin\specialchars\summernote-ext-specialchars.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.css" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.min.css" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.css" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.min.css" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.min.js.LICENSE.txt" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.css" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.min.css" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.min.js" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.min.js.LICENSE.txt" />
+    <Content Include="Data\Word\html\Aspose_DocToHTML.001.png" />
+    <Content Include="Data\Word\html\Aspose_DocToHTML.002.png" />
+    <Content Include="Data\Word\html\Aspose_DocToHTML.003.png" />
+    <Content Include="Data\Word\html\Aspose_DocToHTML.html" />
+    <Content Include="Data\XML\Document.xml" />
+    <Content Include="Data\XML\Fields.xml" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\ImageFile\61103071_2361422507447925_6222318223514140672_n_1.jpg" />
+    <Content Include="Models\ImageFile\bs-vinh.jpg" />
+    <Content Include="Models\ImageFile\images %281%29.jpg" />
+    <Content Include="Models\ImageFile\images %2810%29.jpg" />
+    <Content Include="Models\ImageFile\images %282%29.jpg" />
+    <Content Include="Models\ImageFile\images %283%29.jpg" />
+    <Content Include="Models\ImageFile\images %284%29.jpg" />
+    <Content Include="Models\ImageFile\images %285%29.jpg" />
+    <Content Include="Models\ImageFile\images %286%29.jpg" />
+    <Content Include="Models\ImageFile\images %287%29.jpg" />
+    <Content Include="Models\ImageFile\images %288%29.jpg" />
+    <Content Include="Models\ImageFile\images %289%29.jpg" />
+    <Content Include="Models\ImageFile\images.jpg" />
+    <Content Include="Models\ImageFile\resetPass.jfif" />
+    <Content Include="Models\ImageFile\tải xuống.jpg" />
+    <Content Include="Models\ImageFile\tải xuống.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.js.map" />
+    <Content Include="Content\bootstrap-4.3.1-dist\js\bootstrap.min.js.map" />
+    <Content Include="Content\Chocolat-1.0.4\.travis.yml" />
+    <Content Include="Content\Chocolat-1.0.4\LICENSE" />
+    <Content Include="Content\Chocolat-1.0.4\package-lock.json" />
+    <Content Include="Content\Chocolat-1.0.4\package.json" />
+    <Content Include="Content\Chocolat-1.0.4\readme.md" />
+    <Content Include="Content\Chocolat-1.0.4\yarn.lock" />
+    <Content Include="Content\css\components.css.map" />
+    <Content Include="Content\css\custom.css.map" />
+    <Content Include="Content\css\skins\reverse.css.map" />
+    <Content Include="Content\css\style.css.map" />
+    <Content Include="Content\fonts\nunito-v9-latin-600.eot" />
+    <Content Include="Content\fonts\nunito-v9-latin-600.ttf" />
+    <Content Include="Content\fonts\nunito-v9-latin-600.woff" />
+    <Content Include="Content\fonts\nunito-v9-latin-600.woff2" />
+    <Content Include="Content\fonts\nunito-v9-latin-700.eot" />
+    <Content Include="Content\fonts\nunito-v9-latin-700.ttf" />
+    <Content Include="Content\fonts\nunito-v9-latin-700.woff" />
+    <Content Include="Content\fonts\nunito-v9-latin-700.woff2" />
+    <Content Include="Content\fonts\nunito-v9-latin-800.eot" />
+    <Content Include="Content\fonts\nunito-v9-latin-800.ttf" />
+    <Content Include="Content\fonts\nunito-v9-latin-800.woff" />
+    <Content Include="Content\fonts\nunito-v9-latin-800.woff2" />
+    <Content Include="Content\fonts\nunito-v9-latin-regular.eot" />
+    <Content Include="Content\fonts\nunito-v9-latin-regular.ttf" />
+    <Content Include="Content\fonts\nunito-v9-latin-regular.woff" />
+    <Content Include="Content\fonts\nunito-v9-latin-regular.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Black-FD.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Black-FD.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Black-FD.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Black-FD.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Bold-FD.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Bold-FD.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Bold-FD.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Bold-FD.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-FD.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-FD.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-FD.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-FD.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Light-FD.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Light-FD.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Light-FD.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Light-FD.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Medium-FD.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Medium-FD.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Medium-FD.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Medium-FD.woff2" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Thin-FD.eot" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Thin-FD.ttf" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Thin-FD.woff" />
+    <Content Include="Content\fonts\vazir\Farsi-Digits\Vazir-Thin-FD.woff2" />
+    <Content Include="Content\fonts\vazir\LICENSE" />
+    <Content Include="Content\fonts\vazir\Vazir-Black.eot" />
+    <Content Include="Content\fonts\vazir\Vazir-Black.ttf" />
+    <Content Include="Content\fonts\vazir\Vazir-Black.woff" />
+    <Content Include="Content\fonts\vazir\Vazir-Black.woff2" />
+    <Content Include="Content\fonts\vazir\Vazir-Bold.eot" />
+    <Content Include="Content\fonts\vazir\Vazir-Bold.ttf" />
+    <Content Include="Content\fonts\vazir\Vazir-Bold.woff" />
+    <Content Include="Content\fonts\vazir\Vazir-Bold.woff2" />
+    <Content Include="Content\fonts\vazir\Vazir-Light.eot" />
+    <Content Include="Content\fonts\vazir\Vazir-Light.ttf" />
+    <Content Include="Content\fonts\vazir\Vazir-Light.woff" />
+    <Content Include="Content\fonts\vazir\Vazir-Light.woff2" />
+    <Content Include="Content\fonts\vazir\Vazir-Medium.eot" />
+    <Content Include="Content\fonts\vazir\Vazir-Medium.ttf" />
+    <Content Include="Content\fonts\vazir\Vazir-Medium.woff" />
+    <Content Include="Content\fonts\vazir\Vazir-Medium.woff2" />
+    <Content Include="Content\fonts\vazir\Vazir-Thin.eot" />
+    <Content Include="Content\fonts\vazir\Vazir-Thin.ttf" />
+    <Content Include="Content\fonts\vazir\Vazir-Thin.woff" />
+    <Content Include="Content\fonts\vazir\Vazir-Thin.woff2" />
+    <Content Include="Content\fonts\vazir\Vazir.eot" />
+    <Content Include="Content\fonts\vazir\Vazir.ttf" />
+    <Content Include="Content\fonts\vazir\Vazir.woff" />
+    <Content Include="Content\fonts\vazir\Vazir.woff2" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Black-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Black-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Black-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Black-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Bold-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Bold-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Bold-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Bold-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Light-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Light-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Light-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Light-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Medium-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Medium-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Medium-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Medium-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Thin-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Thin-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Thin-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-Thin-WOL.woff2" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-WOL.eot" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-WOL.ttf" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-WOL.woff" />
+    <Content Include="Content\fonts\vazir\Without-Latin\Vazir-WOL.woff2" />
+    <Content Include="Content\jquery.nicescroll-3.7.6\package.json" />
+    <Content Include="Content\jquery.nicescroll-3.7.6\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\.travis.yml" />
+    <Content Include="Content\OwlCarousel2-2.3.4\bower.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\CONTRIBUTING.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\LICENSE" />
+    <Content Include="Content\OwlCarousel2-2.3.4\dist\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\owlcarousel\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.map" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\custom.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\demos.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\highlight.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\scss\_settings.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.map" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\classes.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\events.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\features.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\data\options.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\layouts\demos.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\layouts\docs.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\layouts\home.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\animate.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoheight.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoplay.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autowidth.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\basic.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\center.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\demos.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\events.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\lazyLoad.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\merge.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\mousewheel.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\responsive.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\rtl.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\stagepadding.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\test.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\urlhashnav.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\video.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-classes.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-events.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-options.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-buildin-plugins.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-external.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-plugin-api.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-styles.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-faq.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-installation.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-welcome.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-changelog.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contact.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contributing.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\pages\index.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\footer.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\head.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\header.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-carousel.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-features.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-hero.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\home-teaser-text.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\javascripts.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\releated-docs.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\sidenav-docs.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\title.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\docs_src\templates\partials\vendors.hbs" />
+    <Content Include="Content\OwlCarousel2-2.3.4\ISSUE_TEMPLATE.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\LICENSE" />
+    <Content Include="Content\OwlCarousel2-2.3.4\package-lock.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\package.json" />
+    <Content Include="Content\OwlCarousel2-2.3.4\README.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\ROADMAP.md" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\.jscsrc" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\js\.jshintrc" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\owl.carousel.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\owl.theme.default.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\owl.theme.green.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_animate.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_autoheight.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_core.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_lazyload.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_theme.default.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_theme.green.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_theme.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\src\scss\_video.scss" />
+    <Content Include="Content\OwlCarousel2-2.3.4\_config.json" />
+    <Content Include="Content\scss\components.scss" />
+    <Content Include="Content\scss\components\_activities.scss" />
+    <Content Include="Content\scss\components\_article.scss" />
+    <Content Include="Content\scss\components\_author.scss" />
+    <Content Include="Content\scss\components\_avatar.scss" />
+    <Content Include="Content\scss\components\_avataritem.scss" />
+    <Content Include="Content\scss\components\_browser.scss" />
+    <Content Include="Content\scss\components\_chat.scss" />
+    <Content Include="Content\scss\components\_chocolat.scss" />
+    <Content Include="Content\scss\components\_customtab.scss" />
+    <Content Include="Content\scss\components\_datatables.scss" />
+    <Content Include="Content\scss\components\_daterangepicker.scss" />
+    <Content Include="Content\scss\components\_dropzone.scss" />
+    <Content Include="Content\scss\components\_empty_state.scss" />
+    <Content Include="Content\scss\components\_flagicon.scss" />
+    <Content Include="Content\scss\components\_fullcalendar.scss" />
+    <Content Include="Content\scss\components\_gallery.scss" />
+    <Content Include="Content\scss\components\_hero.scss" />
+    <Content Include="Content\scss\components\_imagepreview.scss" />
+    <Content Include="Content\scss\components\_invoice.scss" />
+    <Content Include="Content\scss\components\_ionicons.scss" />
+    <Content Include="Content\scss\components\_jqvmap.scss" />
+    <Content Include="Content\scss\components\_owlcarousel.scss" />
+    <Content Include="Content\scss\components\_pricing.scss" />
+    <Content Include="Content\scss\components\_product.scss" />
+    <Content Include="Content\scss\components\_profile.scss" />
+    <Content Include="Content\scss\components\_pwstrength.scss" />
+    <Content Include="Content\scss\components\_select2.scss" />
+    <Content Include="Content\scss\components\_selectric.scss" />
+    <Content Include="Content\scss\components\_slider.scss" />
+    <Content Include="Content\scss\components\_sparkline.scss" />
+    <Content Include="Content\scss\components\_statistics.scss" />
+    <Content Include="Content\scss\components\_summary.scss" />
+    <Content Include="Content\scss\components\_summernote.scss" />
+    <Content Include="Content\scss\components\_sweetalert.scss" />
+    <Content Include="Content\scss\components\_tagsinput.scss" />
+    <Content Include="Content\scss\components\_ticket.scss" />
+    <Content Include="Content\scss\components\_timepicker.scss" />
+    <Content Include="Content\scss\components\_toast.scss" />
+    <Content Include="Content\scss\components\_useritem.scss" />
+    <Content Include="Content\scss\components\_weather.scss" />
+    <Content Include="Content\scss\components\_weathericon.scss" />
+    <Content Include="Content\scss\components\_wizard.scss" />
+    <Content Include="Content\scss\override\_accordion.scss" />
+    <Content Include="Content\scss\override\_alert.scss" />
+    <Content Include="Content\scss\override\_badge.scss" />
+    <Content Include="Content\scss\override\_breadcrumb.scss" />
+    <Content Include="Content\scss\override\_button.scss" />
+    <Content Include="Content\scss\override\_card.scss" />
+    <Content Include="Content\scss\override\_carousel.scss" />
+    <Content Include="Content\scss\override\_dropdown.scss" />
+    <Content Include="Content\scss\override\_form.scss" />
+    <Content Include="Content\scss\override\_grid.scss" />
+    <Content Include="Content\scss\override\_jumbotron.scss" />
+    <Content Include="Content\scss\override\_list.scss" />
+    <Content Include="Content\scss\override\_media.scss" />
+    <Content Include="Content\scss\override\_misc.scss" />
+    <Content Include="Content\scss\override\_modal.scss" />
+    <Content Include="Content\scss\override\_nav.scss" />
+    <Content Include="Content\scss\override\_navbar.scss" />
+    <Content Include="Content\scss\override\_pagination.scss" />
+    <Content Include="Content\scss\override\_popover.scss" />
+    <Content Include="Content\scss\override\_progressbar.scss" />
+    <Content Include="Content\scss\override\_tab.scss" />
+    <Content Include="Content\scss\override\_table.scss" />
+    <Content Include="Content\scss\override\_tooltip.scss" />
+    <Content Include="Content\scss\rtl.scss" />
+    <Content Include="Content\scss\skins\reverse.scss" />
+    <Content Include="Content\scss\style.scss" />
+    <Content Include="Content\scss\theme\_animation.scss" />
+    <Content Include="Content\scss\theme\_layout.scss" />
+    <Content Include="Content\scss\theme\_misc.scss" />
+    <Content Include="Content\scss\theme\_page.scss" />
+    <Content Include="Content\scss\theme\_section.scss" />
+    <Content Include="Content\scss\_functions.scss" />
+    <Content Include="Content\scss\_mixin.scss" />
+    <Content Include="Content\scss\_variable.scss" />
+    <Content Include="Content\summernote-0.8.18-dist\font\summernote.eot" />
+    <Content Include="Content\summernote-0.8.18-dist\font\summernote.ttf" />
+    <Content Include="Content\summernote-0.8.18-dist\font\summernote.woff" />
+    <Content Include="Content\summernote-0.8.18-dist\font\summernote.woff2" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.js.map" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-bs4.min.js.map" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.js.map" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote-lite.min.js.map" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.js.map" />
+    <Content Include="Content\summernote-0.8.18-dist\summernote.min.js.map" />
+    <Content Include="Data\Word\.docx" />
+    <Content Include="Data\Word\BaoCao.doc" />
+    <Content Include="Data\Word\Member_Detail.doc" />
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\QuanLyHoiVien\DanhSachHoiVien.cshtml" />
+    <Content Include="Views\QuanLyHoiVien\ChiTietHoiVien.cshtml" />
+    <Content Include="Views\DanhSachHPN\DanhSachHPN.cshtml" />
+    <Content Include="Views\DanhSachHPN\ChiTietHPN.cshtml" />
+    <Content Include="Views\DanhSachCD\DanhSachCD.cshtml" />
+    <Content Include="Views\DanhSachCD\ChiTietCD.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Profile.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\QuanLyHoiVien\ThemMoiHoiVien.cshtml" />
+    <Content Include="Views\CapLaiMatKhau\Index.cshtml" />
+    <Content Include="Views\CapLaiMatKhau\ThongTinHoiVien.cshtml" />
+    <Content Include="Views\LienHe\Index.cshtml" />
+    <Content Include="Views\BaoCao\KhoBaoCaoNam.cshtml" />
+    <Content Include="Views\BaoCao\KhoBaoCaoQuy.cshtml" />
+    <Content Include="Views\BaoCao\Partial_BaoCao.cshtml" />
+    <Content Include="Web.Config" />
+    <Content Include="Views\BaoCao\PartialBaoCaoCD.cshtml" />
+    <Content Include="Views\BaoCao\PartialBaoCaoHPN.cshtml" />
+    <Content Include="Views\BaoCao\ReportQuarter.cshtml" />
+    <Content Include="Views\BaoCao\ReportYear.cshtml" />
+    <Content Include="Views\Account\DanhSachTaiKhoan.cshtml" />
+    <None Include="Web.Debug.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+    <None Include="Web.Release.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Profile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64030</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44336/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

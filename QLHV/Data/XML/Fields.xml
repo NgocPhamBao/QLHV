@@ -1,0 +1,6270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fields>
+
+
+	<field id="0">
+		<name>ĐƠN VỊ</name>
+		<type>donvi</type>
+		<templatecode>DonVi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>1</bold>
+		<italic>0</italic>
+		<center>0</center>
+		<value> </value>
+	</field>
+
+	<field id ="1">
+		<name>Tên thống kê</name>
+		<type>tenthongke</type>
+		<templatecode>TenThongKe</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>1</bold>
+		<italic>0</italic>
+		<center>0</center>
+		<value> </value>
+	</field>
+
+	<field id="2">
+		<name>Tháng Năm</name>
+		<type>thangnam</type>
+		<templatecode>ThangNam</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>1</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="3">
+		<name>HV là SQ</name>
+		<type>output</type>
+		<templatecode>HV_SQ</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="4">
+		<name>CĐ nam là SQ</name>
+		<type>output</type>
+		<templatecode>CDNa_SQ</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="5">
+		<name>CĐ nữ là SQ</name>
+		<type>output</type>
+		<templatecode>CDN_SQ</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="6">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_QNCN</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="7">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_QNCN</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="8">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_QNCN</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="9">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CNVQP</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="10">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CNVQP</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="11">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CNVQP</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="12">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDHD</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="13">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDHD</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="14">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDHD</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="15">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DTThieuSo</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="16">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DTThieuSo</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="17">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DTThieuSo</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="18">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDSoCap</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="19">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDSoCap</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="20">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDSoCap</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="21">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDTrungCap</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="22">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDTrungCap</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="23">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDTrungCap</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="24">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDCaoDang</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="25">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDCaoDang</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="26">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDCaoDang</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="27">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDDaiHoc</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="28">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDDaiHoc</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="29">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDDaiHoc</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="30">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDThacSi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="31">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDThacSi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="32">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDThacSi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="33">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDTienSi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="34">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDTienSi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="35">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDTienSi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="36">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHTroGiang</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="37">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHTroGiang</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="38">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHTroGiang</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="39">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHGiangVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="40">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHGiangVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="41">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHGiangVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="42">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHGiangVienChinh</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="43">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHGiangVienChinh</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="44">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHGiangVienChinh</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="45">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHPhoGS</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="46">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHPhoGS</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="47">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHPhoGS</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="48">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHGS</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="49">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHGS</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="50">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHGS</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="51">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho2</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="52">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho2</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="53">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho2</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="54">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho3</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="55">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho3</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="56">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho3</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="57">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho4</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="58">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho4</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="59">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho4</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="60">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho5</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="61">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho5</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="62">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho5</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="63">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho6</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="64">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho6</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="65">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho6</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="66">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho7</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="67">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho7</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="68">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho7</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="69">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDCNKhoa</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="70">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDCNKhoa</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="71">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDCNKhoa</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="72">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoCNKhoa</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="73">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoCNKhoa</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="74">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoCNKhoa</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="75">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDCNBoMon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="76">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDCNBoMon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="77">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDCNBoMon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="78">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoCNBoMon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="79">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoCNBoMon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="80">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoCNBoMon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="81">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDTruongPhong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="82">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDTruongPhong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="83">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDTruongPhong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="84">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoTruongPhong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="85">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoTruongPhong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="86">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoTruongPhong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="87">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDTruongBan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="88">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDTruongBan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="89">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDTruongBan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="90">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoTruongBan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="91">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoTruongBan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="92">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoTruongBan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="93">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDTroLy</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="94">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDTroLy</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="95">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDTroLy</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="96">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDKTVHuongDan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="97">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDKTVHuongDan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="98">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDKTVHuongDan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="99">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DoTuoi18_30</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="100">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DoTuoi18_30</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="101">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DoTuoi18_30</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="102">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DoTuoi31_49</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="103">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DoTuoi31_49</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="104">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DoTuoi31_49</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="105">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DoTuoi50TroLen</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="106">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DoTuoi50TroLen</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="107">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DoTuoi50TroLen</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="108">
+		<name> HV là ĐV</name>
+		<type>output</type>
+		<templatecode>HV_DV</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="109">
+		<name> CĐ nam là ĐV</name>
+		<type>output</type>
+		<templatecode>CDNa_DV</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="110">
+		<name> CĐ nữ là ĐV</name>
+		<type>output</type>
+		<templatecode>CDN_DV</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="111">
+		<name> HV là ĐV mới</name>
+		<type>output</type>
+		<templatecode>HV_DVMoi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="112">
+		<name> CĐ nam là ĐV mới</name>
+		<type>output</type>
+		<templatecode>CDNa_DVMoi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="113">
+		<name> CĐ nữ là ĐV mới</name>
+		<type>output</type>
+		<templatecode>CDN_DVMoi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="114">
+		<name> HV là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>HV_DVDeXuat</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="115">
+		<name> CĐ nam là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>CDNa_DVDeXuat</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="116">
+		<name>CĐ nữ là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>CDN_DVDeXuat</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="117">
+		<name> HV là Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>HV_VTDUBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="118">
+		<name> CĐ nam là Bí thư ĐU </name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="119">
+		<name>CĐ nữ là Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="120">
+		<name> HV là Phó Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>HV_VTDUPhoBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="121">
+		<name> CĐ nam là Phó Bí thư ĐU </name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUPhoBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="122">
+		<name>CĐ nữ là Phó Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUPhoBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="123">
+		<name> HV là ĐU viên</name>
+		<type>output</type>
+		<templatecode>HV_VTDUDangUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="124">
+		<name> CĐ nam là ĐU viên </name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUDangUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="125">
+		<name>CĐ nữ là ĐU viên</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUDangUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="126">
+		<name> HV là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>HV_VTDUThuongVu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="127">
+		<name> CĐ nam là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUThuongVu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="128">
+		<name>CĐ nữ là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUThuongVu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="129">
+		<name> HV là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>HV_VTCBBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="130">
+		<name> CĐ nam là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDNa_VTCBBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="131">
+		<name>CĐ nữ là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDN_VTCBBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="132">
+		<name> HV là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>HV_VTCBPhoBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="133">
+		<name> CĐ nam là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDNa_VTCBPhoBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="134">
+		<name>CĐ nữ là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDN_VTCBPhoBiThu</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="135">
+		<name> HV là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>HV_VTCBChiUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="136">
+		<name> CĐ nam là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>CDNa_VTCBChiUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="137">
+		<name>CĐ nữ là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>CDN_VTCBChiUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="138">
+		<name> HV là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>HV_VTDTChuTich</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="139">
+		<name> CĐ nam là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTChuTich</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="140">
+		<name>CĐ nữ là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTChuTich</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="141">
+		<name> HV là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>HV_VTDTPhoChuTich</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="142">
+		<name> CĐ nam là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTPhoChuTich</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="143">
+		<name>CĐ nữ là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTPhoChuTich</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="144">
+		<name> HV là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>HV_VTDTUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="145">
+		<name> CĐ nam là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="146">
+		<name>CĐ nữ là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTUyVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="147">
+		<name> HV là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>HV_VTDTBiThuDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="148">
+		<name> CĐ nam là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTBiThuDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="149">
+		<name>CĐ nữ là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTBiThuDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="150">
+		<name> HV là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>HV_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="151">
+		<name> CĐ nam là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="152">
+		<name>CĐ nữ là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="153">
+		<name> HV là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>HV_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="154">
+		<name> CĐ nam là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="155">
+		<name>CĐ nữ là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="156">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="157">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="158">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="159">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapBQP</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="160">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapBQP</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="161">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapBQP</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="162">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapHocVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="163">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapHocVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="164">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapHocVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="165">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapCoSo</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="166">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapCoSo</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="167">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapCoSo</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="168">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTSKCTKT</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="169">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTSKCTKT</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="170">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTSKCTKT</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="171">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="172">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="173">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="174">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_KetNapMoi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="175">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_KetNapMoi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="176">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_KetNapMoi</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="177">
+		<name>HV mất vợ/chồng</name>
+		<type>output</type>
+		<templatecode>MatVoChong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="178">
+		<name>HV ly hôn</name>
+		<type>output</type>
+		<templatecode>LyHon</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="179">
+		<name>HV nuôi con một mình</name>
+		<type>output</type>
+		<templatecode>NuoiCon1Minh</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="180">
+		<name>HV mắc bệnh hiểm nghèo, bệnh dài ngày</name>
+		<type>output</type>
+		<templatecode>BenhHiemNgheo_DaiNgay</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="181">
+		<name>HV có con mắc bệnh</name>
+		<type>output</type>
+		<templatecode>ConMacBenh</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="182">
+		<name>HV nhà ở hỏng</name>
+		<type>output</type>
+		<templatecode>NhaOHong</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="183">
+		<name>HV trên 35 tuổi chưa lập gia đình</name>
+		<type>output</type>
+		<templatecode>Tren35TChuaCoGD</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="184">
+		<name>HV có vợ/chồng công tác tại Học viện</name>
+		<type>output</type>
+		<templatecode>VoChongCTOHocVien</templatecode>
+		<DocumentId>0</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	<field id="186">
+		<name>ĐƠN VỊ</name>
+		<type>donvi</type>
+		<templatecode>DonVi</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>1</bold>
+		<italic>0</italic>
+		<center>0</center>
+		<value> </value>
+	</field>
+
+	<field id ="187">
+		<name>Tên thống kê</name>
+		<type>tenthongke</type>
+		<templatecode>TenThongKe</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>1</bold>
+		<italic>0</italic>
+		<center>0</center>
+		<value> </value>
+	</field>
+
+	<field id="188">
+		<name>Tháng Năm</name>
+		<type>thangnam</type>
+		<templatecode>ThangNam</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>1</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="189">
+		<name>HV là SQ</name>
+		<type>output</type>
+		<templatecode>HV_SQ</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="190">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_QNCN</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="191">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CNVQP</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+
+
+	<field id="192">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDHD</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+
+	<field id="193">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DTThieuSo</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="194">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDSoCap</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="195">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDTrungCap</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="196">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDCaoDang</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="197">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDDaiHoc</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="198">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDThacSi</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="199">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_TDTienSi</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="200">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHTroGiang</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="201">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHGiangVien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="202">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHGiangVienChinh</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="203">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHPhoGS</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="204">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DHGS</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="205">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho2</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="206">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho3</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="207">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho4</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="208">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho5</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="209">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho6</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="210">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_BacTho7</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="211">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDCNKhoa</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="212">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoCNKhoa</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="213">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDCNBoMon</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="214">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoCNBoMon</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="215">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDTruongPhong</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="216">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoTruongPhong</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="217">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDTruongBan</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="218">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDPhoTruongBan</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="219">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDTroLy</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="220">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_CDKTVHuongDan</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="221">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DoTuoi18_30</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="222">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DoTuoi31_49</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="223">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_DoTuoi50TroLen</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="224">
+		<name> HV là ĐV</name>
+		<type>output</type>
+		<templatecode>HV_DV</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="225">
+		<name> HV là ĐV mới</name>
+		<type>output</type>
+		<templatecode>HV_DVMoi</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="226">
+		<name> HV là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>HV_DVDeXuat</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="227">
+		<name> HV là Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>HV_VTDUBiThu</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="228">
+		<name> HV là Phó Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>HV_VTDUPhoBiThu</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="229">
+		<name> HV là ĐU viên</name>
+		<type>output</type>
+		<templatecode>HV_VTDUDangUyVien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="230">
+		<name> HV là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>HV_VTDUThuongVu</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="231">
+		<name> HV là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>HV_VTCBBiThu</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="232">
+		<name> HV là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>HV_VTCBPhoBiThu</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="233">
+		<name> HV là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>HV_VTCBChiUyVien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="234">
+		<name> HV là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>HV_VTDTChuTich</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="235">
+		<name> HV là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>HV_VTDTPhoChuTich</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="236">
+		<name> HV là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>HV_VTDTUyVien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="237">
+		<name> HV là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>HV_VTDTBiThuDoan</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="238">
+		<name> HV là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>HV_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="239">
+		<name> HV là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>HV_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="240">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="241">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapBQP</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="242">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapHocVien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="243">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTCapCoSo</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="244">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTSKCTKT</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="245">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="246">
+		<name></name>
+		<type>output</type>
+		<templatecode>HV_KetNapMoi</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="247">
+		<name>HV mất vợ/chồng</name>
+		<type>output</type>
+		<templatecode>MatVoChong</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="248">
+		<name>HV ly hôn</name>
+		<type>output</type>
+		<templatecode>LyHon</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="249">
+		<name>HV nuôi con một mình</name>
+		<type>output</type>
+		<templatecode>NuoiCon1Minh</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="250">
+		<name>HV mắc bệnh hiểm nghèo, bệnh dài ngày</name>
+		<type>output</type>
+		<templatecode>BenhHiemNgheo_DaiNgay</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="251">
+		<name>HV có con mắc bệnh</name>
+		<type>output</type>
+		<templatecode>ConMacBenh</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="252">
+		<name>HV nhà ở hỏng</name>
+		<type>output</type>
+		<templatecode>NhaOHong</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="253">
+		<name>HV trên 35 tuổi chưa lập gia đình</name>
+		<type>output</type>
+		<templatecode>Tren35TChuaCoGD</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="254">
+		<name>HV có vợ/chồng công tác tại Học viện</name>
+		<type>output</type>
+		<templatecode>VoChongCTOHocVien</templatecode>
+		<DocumentId>1</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	<field id="255">
+		<name>ĐƠN VỊ</name>
+		<type>donvi</type>
+		<templatecode>DonVi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>1</bold>
+		<italic>0</italic>
+		<center>0</center>
+		<value> </value>
+	</field>
+
+	<field id ="256">
+		<name>Tên thống kê</name>
+		<type>tenthongke</type>
+		<templatecode>TenThongKe</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>1</bold>
+		<italic>0</italic>
+		<center>0</center>
+		<value> </value>
+	</field>
+
+	<field id="257">
+		<name>Tháng Năm</name>
+		<type>thangnam</type>
+		<templatecode>ThangNam</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>1</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="259">
+		<name>CĐ nam là SQ</name>
+		<type>output</type>
+		<templatecode>CDNa_SQ</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="260">
+		<name>CĐ nữ là SQ</name>
+		<type>output</type>
+		<templatecode>CDN_SQ</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="258">
+		<name>CD là SQ</name>
+		<type>output</type>
+		<templatecode>CD_SQ</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	<field id="262">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_QNCN</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="263">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_QNCN</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+	<field id="261">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_QNCN</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="265">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CNVQP</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="266">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CNVQP</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+	<field id="264">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CNVQP</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+
+
+
+	<field id="268">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDHD</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+	<field id="269">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDHD</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="267">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDHD</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+		<value> </value>
+	</field>
+
+
+
+	<field id="271">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DTThieuSo</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="272">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DTThieuSo</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="270">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DTThieuSo</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="274">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDSoCap</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="275">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDSoCap</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="273">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_TDSoCap</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="277">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDTrungCap</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="278">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDTrungCap</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="276">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_TDTrungCap</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="280">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDCaoDang</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="281">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDCaoDang</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="279">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_TDCaoDang</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="283">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDDaiHoc</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="284">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDDaiHoc</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="282">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_TDDaiHoc</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="286">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDThacSi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="287">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDThacSi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="285">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_TDThacSi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="289">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_TDTienSi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="290">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_TDTienSi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="288">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_TDTienSi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+
+	<field id="292">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHTroGiang</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="293">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHTroGiang</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="291">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DHTroGiang</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="295">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHGiangVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="296">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHGiangVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="294">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DHGiangVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="298">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHGiangVienChinh</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="299">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHGiangVienChinh</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="297">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DHGiangVienChinh</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="301">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHPhoGS</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="302">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHPhoGS</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="300">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DHPhoGS</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="304">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DHGS</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="305">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DHGS</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="303">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DHGS</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="307">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho2</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="308">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho2</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="306">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_BacTho2</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="310">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho3</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="311">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho3</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="309">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_BacTho3</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="313">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho4</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="314">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho4</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="312">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_BacTho4</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="316">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho5</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="317">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho5</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="315">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_BacTho5</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="319">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho6</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="320">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho6</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="318">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_BacTho6</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="322">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_BacTho7</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="323">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_BacTho7</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="321">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_BacTho7</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="325">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDCNKhoa</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="326">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDCNKhoa</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="324">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDCNKhoa</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="328">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoCNKhoa</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="329">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoCNKhoa</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="327">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDPhoCNKhoa</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="331">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDCNBoMon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="332">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDCNBoMon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="330">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDCNBoMon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="334">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoCNBoMon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="335">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoCNBoMon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="333">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDPhoCNBoMon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="337">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDTruongPhong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="338">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDTruongPhong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="336">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDTruongPhong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="340">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoTruongPhong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="341">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoTruongPhong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="339">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDPhoTruongPhong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="343">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDTruongBan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="344">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDTruongBan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="342">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDTruongBan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="346">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDPhoTruongBan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="347">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDPhoTruongBan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="345">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDPhoTruongBan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="349">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDTroLy</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="350">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDTroLy</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="348">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDTroLy</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="352">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_CDKTVHuongDan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="353">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_CDKTVHuongDan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="351">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_CDKTVHuongDan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="355">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DoTuoi18_30</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="356">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DoTuoi18_30</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="354">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DoTuoi18_30</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="358">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DoTuoi31_49</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="359">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DoTuoi31_49</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="357">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DoTuoi31_49</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="361">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_DoTuoi50TroLen</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="362">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_DoTuoi50TroLen</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="360">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_DoTuoi50TroLen</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	<field id="364">
+		<name> CĐ nam là ĐV</name>
+		<type>output</type>
+		<templatecode>CDNa_DV</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="365">
+		<name> CĐ nữ là ĐV</name>
+		<type>output</type>
+		<templatecode>CDN_DV</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="363">
+		<name> CD là ĐV</name>
+		<type>output</type>
+		<templatecode>CD_DV</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="367">
+		<name> CĐ nam là ĐV mới</name>
+		<type>output</type>
+		<templatecode>CDNa_DVMoi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="368">
+		<name> CĐ nữ là ĐV mới</name>
+		<type>output</type>
+		<templatecode>CDN_DVMoi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="366">
+		<name> CD là ĐV mới</name>
+		<type>output</type>
+		<templatecode>CD_DVMoi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="370">
+		<name> CĐ nam là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>CDNa_DVDeXuat</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="371">
+		<name>CĐ nữ là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>CDN_DVDeXuat</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="369">
+		<name> CD là ĐV đang đề xuất kết nạp</name>
+		<type>output</type>
+		<templatecode>CD_DVDeXuat</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="373">
+		<name> CĐ nam là Bí thư ĐU </name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="374">
+		<name>CĐ nữ là Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="372">
+		<name> CD là Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>CD_VTDUBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="376">
+		<name> CĐ nam là Phó Bí thư ĐU </name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUPhoBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="377">
+		<name>CĐ nữ là Phó Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUPhoBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="375">
+		<name> CD là Phó Bí thư ĐU</name>
+		<type>output</type>
+		<templatecode>CD_VTDUPhoBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="379">
+		<name> CĐ nam là ĐU viên </name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUDangUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="380">
+		<name>CĐ nữ là ĐU viên</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUDangUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="378">
+		<name> CD là ĐU viên</name>
+		<type>output</type>
+		<templatecode>CD_VTDUDangUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="382">
+		<name> CĐ nam là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDUThuongVu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="383">
+		<name>CĐ nữ là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>CDN_VTDUThuongVu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="381">
+		<name> CD là Thường vụ ĐU</name>
+		<type>output</type>
+		<templatecode>CD_VTDUThuongVu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="385">
+		<name> CĐ nam là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDNa_VTCBBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="386">
+		<name>CĐ nữ là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDN_VTCBBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="384">
+		<name> CD là Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CD_VTCBBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="388">
+		<name> CĐ nam là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDNa_VTCBPhoBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="389">
+		<name>CĐ nữ là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CDN_VTCBPhoBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="387">
+		<name> CD là Phó Bí thư CB</name>
+		<type>output</type>
+		<templatecode>CD_VTCBPhoBiThu</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="391">
+		<name> CĐ nam là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>CDNa_VTCBChiUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="392">
+		<name>CĐ nữ là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>CDN_VTCBChiUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="390">
+		<name> CD là Chi ủy viên</name>
+		<type>output</type>
+		<templatecode>CD_VTCBChiUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="394">
+		<name> CĐ nam là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTChuTich</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="395">
+		<name>CĐ nữ là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTChuTich</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="393">
+		<name> CD là Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CD_VTDTChuTich</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="397">
+		<name> CĐ nam là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTPhoChuTich</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="398">
+		<name>CĐ nữ là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTPhoChuTich</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="396">
+		<name> CD là Phó Chủ tịch tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CD_VTDTPhoChuTich</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="400">
+		<name> CĐ nam là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="401">
+		<name>CĐ nữ là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="399">
+		<name> CD là Ủy viên tổ chức đoàn thể</name>
+		<type>output</type>
+		<templatecode>CD_VTDTUyVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="403">
+		<name> CĐ nam là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTBiThuDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="404">
+		<name>CĐ nữ là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTBiThuDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="402">
+		<name> CD là Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CD_VTDTBiThuDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="406">
+		<name> CĐ nam là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="407">
+		<name>CĐ nữ là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="405">
+		<name> CD là Phó Bí thư Đoàn</name>
+		<type>output</type>
+		<templatecode>CD_VTDTPhoBiThuDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="409">
+		<name> CĐ nam là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>CDNa_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="410">
+		<name>CĐ nữ là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>CDN_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="408">
+		<name> CD là UV BCH Đoàn</name>
+		<type>output</type>
+		<templatecode>CD_VTDTUyVienBCHDoan</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	<field id="412">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="413">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="411">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDSTCapNhaNuoc</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="415">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapBQP</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="416">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapBQP</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="414">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDSTCapBQP</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+
+	<field id="418">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapHocVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="419">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapHocVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="417">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDSTCapHocVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="421">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTCapCoSo</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="422">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTCapCoSo</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="420">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDSTCapCoSo</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="424">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTSKCTKT</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="425">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTSKCTKT</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="423">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDSTSKCTKT</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="427">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="428">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="426">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_LDSTGiaTriThanhTien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+	<field id="430">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDNa_KetNapMoi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="431">
+		<name></name>
+		<type>output</type>
+		<templatecode>CDN_KetNapMoi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	<field id="429">
+		<name></name>
+		<type>output</type>
+		<templatecode>CD_KetNapMoi</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+	///////////////////////////////////////////////////////////////////////////////////////
+
+	<field id="432">
+		<name>CD mất vợ/chồng</name>
+		<type>output</type>
+		<templatecode>MatVoChong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="433">
+		<name>CD ly hôn</name>
+		<type>output</type>
+		<templatecode>LyHon</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="434">
+		<name>CD nuôi con một mình</name>
+		<type>output</type>
+		<templatecode>NuoiCon1Minh</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="435">
+		<name>CD mắc bệnh hiểm nghèo, bệnh dài ngày</name>
+		<type>output</type>
+		<templatecode>BenhHiemNgheo_DaiNgay</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="436">
+		<name>CD có con mắc bệnh</name>
+		<type>output</type>
+		<templatecode>ConMacBenh</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="437">
+		<name>CD nhà ở hỏng</name>
+		<type>output</type>
+		<templatecode>NhaOHong</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="438">
+		<name>CD trên 35 tuổi chưa lập gia đình</name>
+		<type>output</type>
+		<templatecode>Tren35TChuaCoGD</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+	<field id="439">
+		<name>CD có vợ/chồng công tác tại Học viện</name>
+		<type>output</type>
+		<templatecode>VoChongCTOHocVien</templatecode>
+		<DocumentId>2</DocumentId>
+		<height>25</height>
+		<width>144</width>
+		<upper>1</upper>
+		<bold>0</bold>
+		<italic>0</italic>
+		<center>1</center>
+		<value> </value>
+	</field>
+
+
+</fields>

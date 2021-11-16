@@ -1,0 +1,63 @@
+﻿@model QLHV.Models.ViewModels.CapMatKhau.CapMatKhauView
+@{
+    /**/
+
+    ViewBag.Title = "ThongTinHoiVien";
+    Layout = null;
+}
+@if (Model != null)
+{
+    <div class="embed-responsive">
+        <div class="tickets">
+            <div class="ticket-content">
+                <div class="ticket-header">
+                    <div class="ticket-sender-picture img-shadow" style="width:100px; height:150px; margin-left: 20px">
+                        @if (Model.Anh == null)
+                        {
+                            <img src="~/Models/ImageFile/tải xuống.png" style="margin:8% 2%" />
+                        }
+                        else
+                        {
+                            <image id="profileImage" src="@Url.Content(@Model.Anh)" style="margin:8% 2%" />
+                        }
+                    </div>
+                    <div class="ticket-detail">
+                        <div class="ticket-detail">
+
+                            <form method="post" class="needs-validation" novalidate="">
+                                <div class="ticket-title">
+
+                                    <h4 style="margin: 10px 0px 5px 8px" id="tenhv">@Model.TenHV</h4>
+                                </div>
+                                <div class="ticket-info" style="display:block">
+                                    <div class="font-weight-600" style="margin-left:10px"><label>Mã:&ensp;</label>@Model.MaHV</div>
+                                </div>
+                                <div class="ticket-info" style="display:block">
+                                    <div class="font-weight-600" style="margin-left:10px"><label>Ngày sinh:&ensp; </label>@Model.NgaySinh.ToShortDateString()</div>
+                                </div>
+                                <div class="ticket-info" style="display:block">
+                                    <div class="font-weight-600" style="margin-left:10px"><label>Đơn vị: &ensp;</label>@Model.TenDV</div>
+                                </div>
+                                <div class="ticket-info" style="display:block">
+                                    <div class="font-weight-600" style="margin-left:10px"><label>Chức danh:&ensp; </label>@Model.TenCD</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="tickets">
+        <div class="ticket-content">
+            <div class="ticket-title">
+                <div class="ticket-sender-picture img-shadow" style="margin:5%">
+                    <img src="~/Content/img/resetPass.jfif" />
+                </div>
+            </div>
+        </div>
+    </div>
+}

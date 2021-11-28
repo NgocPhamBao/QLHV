@@ -37,7 +37,7 @@ namespace QLHV.Models.ViewModels.QuanLyhoiVien
             BacTho = new List<int>() { 1, 2, 3, 4, 5, 6, 7 };
             TenLDV = mycontext.Database.SqlQuery<string>("SELECT TenLDV FROM dbo.LoaiDangVien").ToList();
             TenHPN = mycontext.Database.SqlQuery<string>("SELECT TenHPN FROM dbo.HoiPhuNu").ToList();
-            TenCD = mycontext.Database.SqlQuery<string>("SELECT TenCD FROM dbo.CongDoan").ToList();
+            //TenCD = mycontext.Database.SqlQuery<string>("SELECT TenCD FROM dbo.CongDoan").ToList();
             TenVTCB = mycontext.Database.SqlQuery<string>("SELECT TenVTCB FROM dbo.ChiBo").ToList();
             TenVTDU = mycontext.Database.SqlQuery<string>("SELECT TenVTDU FROM dbo.DangUy").ToList();
             TenVTDT = mycontext.Database.SqlQuery<string>("SELECT TenVTDT FROM dbo.ToChucDoanThe").ToList();

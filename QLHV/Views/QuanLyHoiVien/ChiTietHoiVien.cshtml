@@ -36,9 +36,10 @@
                                         <div class="col-md-2" style="margin-right:3.5%">
                                             <div style="margin-right:2%">
                                                 <!--anh-->
-                                                
+                                                @using (Html.BeginForm("UpdateAvatar", "QuanLyHoiVien", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                                {
                                                     <div id="profile-container">
-                                                        <input name="file" type="file" id="file" onchange="readURL(this);" style="margin-bottom:5%; background-color:rgba(234, 247, 231, 0.1); width:135%">
+                                                        <input  type="file" name="postedFile" id="file" onchange="readURL(this);" style="margin-bottom:5%; background-color:rgba(234, 247, 231, 0.1); width:135%">
                                                         @if (TTCN.Anh == null)
                                                         {
                                                             <img id="blah" src="~/Models/ImageFile/tải xuống.png" style="margin:8% 2%">
@@ -51,7 +52,10 @@
 
                                                     <!---->
                                                     <h6 style="color:black; text-align:center">@TTCN.TenHV.ToString() - @TTCN.TenDV.ToString()</h6>
-                                                    
+                                                    <div class="card-footer text-center">
+                                                        <button class="btn btn-success" type="submit" style="margin-right:1%; box-shadow: 1px 1px 1px rgb(241, 248, 241)">Lưu ảnh</button>
+                                                    </div>
+                                                }
                                             </div>
                                         </div>
                                         <div class="col-10" style="margin-top:2%">
@@ -639,14 +643,13 @@
         var TenVTCB = $('input[name="TenVTCB"]').val();
         var TenVTDU = $('input[name="TenVTDU"]').val();
         var TenVTDT = $('input[name="TenVTDT"]').val();
-        var file = document.getElementById("file").value;
         alert(file);
         $.ajax({
             url: '/QuanLyHoiVien/ChinhSuaHoiVien/',
             dataType: 'json',
             data: {
                 MaHV: MaHV, TenHV: TenHV, GioiTinh: GioiTinh, DanToc: DanToc, NgaySinh: NgaySinh, NamNhapNgu: NamNhapNgu, TenLHV: TenLHV, TenDV: TenDV, BacTho: BacTho, Email: Email,
-                SDT: SDT, TenHPN: TenHPN, TenLDV: TenLDV, TenVTCB: TenVTCB, TenVTDU: TenVTDU, TenVTDT: TenVTDT,File: file
+                SDT: SDT, TenHPN: TenHPN, TenLDV: TenLDV, TenVTCB: TenVTCB, TenVTDU: TenVTDU, TenVTDT: TenVTDT
             },
             type: 'POST',
             success: function (response) {

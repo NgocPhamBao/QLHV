@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.IO;
-using System.Web;
 using System.Web.Mvc;
 using QLHV.Models.Context;
 using QLHV.Models.Repository.QuanLyHoiVien;
@@ -15,6 +14,7 @@ namespace QLHV.Controllers
 {
      public class QuanLyHoiVienController : Controller
      {
+          public static string MAHV;
           public UserLogin userlogin()
           {
                var user = (UserLogin)Session[CommonConstants.USER_SESSION];
@@ -33,7 +33,7 @@ namespace QLHV.Controllers
           public ActionResult ChiTietHoiVien(string id)
           {
                ViewBag.Message_TTCN = 1;
-               ViewBag.MaHV = id;
+               MAHV = id;
                var HoiVien = new CTHV_ThongTinCaNhan();
                ChiTietHoiVien CTHV = new ChiTietHoiVien();
                ViewBag.TTCN = CTHV.ThongTinCaNhan(id);
@@ -286,23 +286,20 @@ namespace QLHV.Controllers
                     return View(HoiVien);
                }
           }
-          
-          
-          public JsonResult ChinhSuaHoiVien(string MaHV, string TenHV, string GioiTinh, string DanToc, string NgaySinh, string NamNhapNgu, string TenLHV, string TenDV, string BacTho, string Email, string SDT, string TenHPN, string TenLDV, string TenVTCB, string TenVTDU, string TenVTDT,string File)
+          [HttpPost]
+          [ValidateInput(false)]
+          public ActionResult UpdateAvatar( HttpPostedFileBase postedFile)
           {
                //Ham Load anh 
-               string filename = File.ToString();
+               postedFile = Request.Files["postedFile"];
+               string filename = postedFile.FileName.ToString();
                if (filename.Equals("") == false)
                {
-                    // Lấy ảnh từ đường dẫn trong inputfile
-                    System.Web.Helpers.WebImage file = new System.Web.Helpers.WebImage(File);
-                    file.Resize(302, 302, false);
-                    file.Crop(1, 1, 1, 1);
                     //lấy đuôi ảnh
                     string ExtensionFile = GetFileExtension(filename);
                     //lấy tên mới của ảnh + [đuôi ảnh lấy đc]
-                    string namefilenew = ViewBag.Mahv + "-300x300" + "." + ExtensionFile;
-                    
+                    string namefilenew = MAHV + "-300x300" + "." + ExtensionFile;
+
                     var path = Path.Combine(Server.MapPath("~/Models/ImageFile"), namefilenew);
                     //nếu thư mục k tồn tại thì tạo thư mục
                     var folder = Server.MapPath("~/Models/ImageFile");
@@ -311,8 +308,20 @@ namespace QLHV.Controllers
                          Directory.CreateDirectory(folder);
                     }
                     //lưu ảnh vào đường đẫn
+                    postedFile.SaveAs(path);
+                    System.Web.Helpers.WebImage file = new System.Web.Helpers.WebImage(path);
+                    // resize ảnh về 300x300px
+                    file.Resize(302, 302, false);
+                    file.Crop(1, 1, 1, 1);
                     file.Save(path);
+                    //có thể lấy ảnh đường dẫn như sau
+                    //Hv.imange = namefilenew;
                }
+               return RedirectToAction("ChiTietHoiVien",new {id = MAHV });
+          }
+          public JsonResult ChinhSuaHoiVien(string MaHV, string TenHV, string GioiTinh, string DanToc, string NgaySinh, string NamNhapNgu, string TenLHV, string TenDV, string BacTho, string Email, string SDT, string TenHPN, string TenLDV, string TenVTCB, string TenVTDU, string TenVTDT)
+          {
+               
                //Hàm chỉnh sửa thông tin cá nhân 
                //Viết truy vấn vào đây nhé
                return Json(new

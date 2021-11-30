@@ -197,7 +197,7 @@
     <Compile Include="Models\ViewModels\CapMatKhau\CapMatKhauView.cs" />
     <Compile Include="Models\ViewModels\DanhSachCacHoi\BanChapHanh.cs" />
     <Compile Include="Models\ViewModels\DanhSachCacHoi\DB_BanChapHanh.cs" />
-    <Compile Include="Models\ViewModels\DanhSachCacHoi\DanhSachCD.cs" />
+    <Compile Include="Models\ViewModels\DanhSachCacHoi\DanhSachHCD.cs" />
     <Compile Include="Models\ViewModels\DanhSachCacHoi\DanhSachHPN.cs" />
     <Compile Include="Models\ViewModels\LienHe\LienHeView.cs" />
     <Compile Include="Models\ViewModels\QuanLyhoiVien\CTHV_CapBac.cs" />

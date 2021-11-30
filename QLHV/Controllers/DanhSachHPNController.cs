@@ -21,10 +21,10 @@ namespace QLHV.Controllers
         MyContext mycontext = new MyContext();
         // GET: DanhSachCacHoi
         [OutputCache(Location = System.Web.UI.OutputCacheLocation.Server, Duration = int.MaxValue)]
-        public ActionResult DanhSachHPN(int id)
+        public ActionResult DanhSachHPN()
         {
             DanhSachCacHoi DS = new DanhSachCacHoi();
-            var DS_HPN = DS.DanhSachHPN().Where(x=>x.MaHPN==id);
+            var DS_HPN = DS.DanhSachHPN();
             return View(DS_HPN);
         }
         public ActionResult ChiTietHPN(string id)

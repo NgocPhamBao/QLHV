@@ -18,14 +18,14 @@ namespace QLHV.Models.Repository.DanhSachCacHoi
             List<DanhSachHPN> DS_HPN = mycontext.Database.SqlQuery<DanhSachHPN>("EXEC proc_DanhSachHPN").ToList();
             return DS_HPN;
         }        
-        public List<DanhSachCD> DanhSachCD()
+        public List<DanhSachHCD> DanhSachCD()
         {
-            List<DanhSachCD> DS_CD = mycontext.Database.SqlQuery<DanhSachCD>("EXEC proc_DanhSachCD").ToList();
+            List<DanhSachHCD> DS_CD = mycontext.Database.SqlQuery<DanhSachHCD>("EXEC proc_DanhSachCD").ToList();
             return DS_CD;
         }
-        public List<DanhSachHV> ChiTiet_HV(string MaHPN, string Hoi)
+        public List<DanhSachHV> ChiTiet_HV(string MaHoi, string Hoi)
         {
-            List<DanhSachHV> CT_HV = mycontext.Database.SqlQuery<DanhSachHV>("EXEC proc_ChiTiet" + Hoi +"_HV '" + MaHPN + "'").ToList();
+            List<DanhSachHV> CT_HV = mycontext.Database.SqlQuery<DanhSachHV>("EXEC proc_ChiTiet" + Hoi +"_HV '" + MaHoi + "'").ToList();
             foreach (var i in CT_HV)
             {
                 string CB;
@@ -48,7 +48,7 @@ namespace QLHV.Models.Repository.DanhSachCacHoi
         public List<BanChapHanh> ChiTiet_BCH(string MaHPN, string Hoi)
         {
             List<DB_BanChapHanh> DB_BCH = mycontext.Database.SqlQuery<DB_BanChapHanh>("EXEC proc_ChiTiet" + Hoi + "_BCH '" + MaHPN + "'").ToList();
-            var CTHPN_BCH = new List<BanChapHanh>();
+            var CT_BCH = new List<BanChapHanh>();
             var NhiemKyMax = DB_BCH.Max(t => t.NhiemKy);
             var NhiemKyMin = DB_BCH.Min(t => t.NhiemKy);
             var temp = new BanChapHanh();
@@ -62,7 +62,7 @@ namespace QLHV.Models.Repository.DanhSachCacHoi
                     temp.NamBatDau = i.NamBatDau;
                     temp.NamKetThuc = i.NamKetThuc;
                     temp.NhiemKy = i.NhiemKy;
-                    CTHPN_BCH.Add(temp);                    
+                    CT_BCH.Add(temp);                    
                     NhiemKyMax--;
                     temp = new BanChapHanh();
                     temp.PhoChuTich = new List<ViTri_BCH>();
@@ -96,12 +96,12 @@ namespace QLHV.Models.Repository.DanhSachCacHoi
                     temp.NamBatDau = i.NamBatDau;
                     temp.NamKetThuc = i.NamKetThuc;
                     temp.NhiemKy = i.NhiemKy;
-                    CTHPN_BCH.Add(temp);
+                    CT_BCH.Add(temp);
                     NhiemKyMax--;
                     temp = new BanChapHanh();
                 }
             }
-            return CTHPN_BCH;
+            return CT_BCH;
         }
     }
 }

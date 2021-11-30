@@ -1873,7 +1873,6 @@ E:\Nhom4_BanNgay8.11.2021\QLHV\bin\System.Web.WebPages.Razor.xml
 E:\Nhom4_BanNgay8.11.2021\QLHV\bin\Newtonsoft.Json.xml
 E:\Nhom4_BanNgay8.11.2021\QLHV\bin\Antlr3.Runtime.pdb
 E:\Nhom4_BanNgay8.11.2021\QLHV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.csprojAssemblyReference.cache
 E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.csproj.CoreCompileInputs.cache
 E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.csproj.CopyComplete
 E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.dll

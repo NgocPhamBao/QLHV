@@ -9,6 +9,9 @@ using QLHV.Models.Repository.QuanLyHoiVien;
 using QLHV.Models.ViewModels.QuanLyhoiVien;
 using System.Data.SqlClient;
 using QLHV.Common;
+using System.Data;
+using System.Data.SqlClient;
+using System.Data.Entity.Core.EntityClient;
 
 namespace QLHV.Controllers
 {
@@ -319,25 +322,143 @@ namespace QLHV.Controllers
                }
                return RedirectToAction("ChiTietHoiVien",new {id = MAHV });
           }
-          public JsonResult ChinhSuaHoiVien(string MaHV, string TenHV, string GioiTinh, string DanToc, string NgaySinh, string NamNhapNgu, string TenLHV, string TenDV, string BacTho, string Email, string SDT, string TenHPN, string TenLDV, string TenVTCB, string TenVTDU, string TenVTDT)
+          public JsonResult ChinhSuaHoiVien(string MaHV, string TenHV, string GioiTinh, string DanToc, string NgaySinh, string NamNhapNgu, 
+              int MaLHV, int MaDV, int BacTho, string Email, string SDT, int MaHPN, int MaHCD, int MaLDV, int MaVTCB, int MaVTDU, int MaVTDT)
           {
-               
-               //Hàm chỉnh sửa thông tin cá nhân 
-               //Viết truy vấn vào đây nhé
-               return Json(new
-               {
 
-                    status = true
+            //Hàm chỉnh sửa thông tin cá nhân 
+            //Viết truy vấn vào đây nhé
+            var check = mycontext.Database.ExecuteSqlCommand("EXEC proc_ChiTietHoiVien_ThongTinCaNhan_Edit @MaHV, @TenHV, @GioiTinh, @DanToc, " +
+                "@NgaySinh, @NamNhapNgu, @MaLHV, @MaDV, @BacTho, @Email, @SDT, @MaHPN, @MaHCD, @MaLDV, @MaVTCB, @MaVTDU, @MaVTDT", mycontext);
 
-               });
+            EntityParameter param1 = new EntityParameter();
+            param1.ParameterName = "@MaHV";
+            param1.Value = MaHV;
+
+            EntityParameter param2 = new EntityParameter();
+            param1.ParameterName = "@TenHV";
+            param1.Value = TenHV;
+
+            EntityParameter param3 = new EntityParameter();
+            param1.ParameterName = "@GioiTinh";
+            param1.Value = GioiTinh;
+
+            EntityParameter param4 = new EntityParameter();
+            param1.ParameterName = "@DanToc";
+            param1.Value = DanToc;
+
+            EntityParameter param5 = new EntityParameter();
+            param1.ParameterName = "@NgaySinh";
+            param1.Value = NgaySinh;
+
+            EntityParameter param6 = new EntityParameter();
+            param1.ParameterName = "@NamNhapNgu";
+            param1.Value = NamNhapNgu;
+
+            EntityParameter param7 = new EntityParameter();
+            param1.ParameterName = "@MaLHV";
+            param1.Value = MaLHV;
+
+            EntityParameter param8 = new EntityParameter();
+            param1.ParameterName = "@MaDV";
+            param1.Value = MaDV;
+
+            EntityParameter param9 = new EntityParameter();
+            param1.ParameterName = "@BacTho";
+            param1.Value = BacTho;
+
+            EntityParameter param10 = new EntityParameter();
+            param1.ParameterName = "@Email";
+            param1.Value = Email;
+
+            EntityParameter param11 = new EntityParameter();
+            param1.ParameterName = "@SDT";
+            param1.Value = SDT;
+
+            EntityParameter param12 = new EntityParameter();
+            param1.ParameterName = "@MaHPN";
+            param1.Value = MaHPN;
+
+            EntityParameter param13 = new EntityParameter();
+            param1.ParameterName = "@MaHCD";
+            param1.Value = MaHCD;
+
+            EntityParameter param14 = new EntityParameter();
+            param1.ParameterName = "@MaLDV";
+            param1.Value = MaLDV;
+
+            EntityParameter param15 = new EntityParameter();
+            param1.ParameterName = "@MaVTCB";
+            param1.Value = MaVTCB;
+
+            EntityParameter param16 = new EntityParameter();
+            param1.ParameterName = "@MaVTDU";
+            param1.Value = MaVTDU;
+
+            EntityParameter param17 = new EntityParameter();
+            param1.ParameterName = "@MaVTDT";
+            param1.Value = MaVTDT;
+            return Json(new
+            {                
+
+            status = true
+
+              });
           }
-          public JsonResult ChinhSuaHoiVienHCGD(string MaHV, string HoNgheo, string HoCanNgheo, string DaKetHon, string LyHon, string VoChong, string MatChongVo, string NuoiConMotMinh, string BenhAnBanThan, string BenhAnConCai, string NhaCua)
+          public JsonResult ChinhSuaHoiVienHCGD(string MaHV, string HoNgheo, string HoCanNgheo, string DaKetHon, string LyHon, string VoChong, 
+              string MatChongVo, string NuoiConMotMinh, string BenhAnBanThan, string BenhAnConCai, string NhaCua)
           {
-               
-              
-               //Hàm chỉnh sửa hoàn cảnh gia đình
-               //Viết truy vấn vào đây nhé
-               return Json(new
+
+            //Hàm chỉnh sửa hoàn cảnh gia đình
+            //Viết truy vấn vào đây nhé
+            var check = mycontext.Database.ExecuteSqlCommand("EXEC proc_ChiTietHoiVien_HoanCanhGiaDinh_Edit @MaHV, @HoNgheo, @HoCanNgheo, @DaKetHon, " +
+                "@LyHon, @VoChong, @MatChongVo, @NuoiConMotMinh, @BenhAnBanThan, @BenhAnConCai, @NhaCua", mycontext);
+
+            EntityParameter param1 = new EntityParameter();
+            param1.ParameterName = "@MaHV";
+            param1.Value = MaHV;
+
+            EntityParameter param2 = new EntityParameter();
+            param1.ParameterName = "@HoNgheo";
+            param1.Value = HoNgheo;
+
+            EntityParameter param3 = new EntityParameter();
+            param1.ParameterName = "@HoCanNgheo";
+            param1.Value = HoCanNgheo;
+
+            EntityParameter param4 = new EntityParameter();
+            param1.ParameterName = "@DaKetHon";
+            param1.Value = DaKetHon;
+
+            EntityParameter param5 = new EntityParameter();
+            param1.ParameterName = "@LyHon";
+            param1.Value = LyHon;
+
+            EntityParameter param6 = new EntityParameter();
+            param1.ParameterName = "@VoChong";
+            param1.Value = VoChong;
+
+            EntityParameter param7 = new EntityParameter();
+            param1.ParameterName = "@MatChongVo";
+            param1.Value = MatChongVo;
+
+            EntityParameter param8 = new EntityParameter();
+            param1.ParameterName = "@NuoiConMotMinh";
+            param1.Value = NuoiConMotMinh;
+
+            EntityParameter param9 = new EntityParameter();
+            param1.ParameterName = "@BenhAnBanThan";
+            param1.Value = BenhAnBanThan;
+
+            EntityParameter param10 = new EntityParameter();
+            param1.ParameterName = "@BenhAnConCai";
+            param1.Value = BenhAnConCai;
+
+            EntityParameter param11 = new EntityParameter();
+            param1.ParameterName = "@NhaCua";
+            param1.Value = NhaCua;
+
+            return Json(new
                {
 
                     status = true

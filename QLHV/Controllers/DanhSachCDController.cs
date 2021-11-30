@@ -30,9 +30,9 @@ namespace QLHV.Controllers
             
             MyContext mycontext = new MyContext();
             DanhSachCacHoi CD = new DanhSachCacHoi();
-            var CTCD_HV = CD.ChiTiet_HV(id, "CD");
-            ViewBag.BCH = CD.ChiTiet_BCH(id,"CD");
-            ViewBag.TenCD = mycontext.Database.SqlQuery<string>("SELECT TenCD FROM dbo.CongDoan WHERE MaCD = '" + id + "'").FirstOrDefault();
+            var CTCD_HV = CD.ChiTiet_HV(id, "HCD");
+            ViewBag.BCH = CD.ChiTiet_BCH(id,"HCD");
+            ViewBag.TenCD = mycontext.Database.SqlQuery<string>("SELECT TenHCD FROM dbo.HoiCongDoan WHERE MaHCD = '" + id + "'").FirstOrDefault();
             return View(CTCD_HV);
         }
     }

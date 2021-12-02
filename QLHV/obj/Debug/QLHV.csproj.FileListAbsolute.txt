@@ -1877,8 +1877,6 @@ E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.csproj.CoreCompileInputs.cache
 E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.csproj.CopyComplete
 E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.dll
 E:\Nhom4_BanNgay8.11.2021\QLHV\obj\Debug\QLHV.pdb
-C:\Users\PC\source\repos\QLHV\QLHV\bin\Aspose.Words.dll
-C:\Users\PC\source\repos\QLHV\QLHV\bin\Aspose.Words.xml
 C:\Users\PC\source\repos\QLHV\QLHV\bin\QLHV.dll.config
 C:\Users\PC\source\repos\QLHV\QLHV\bin\QLHV.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\QLHV.pdb
@@ -2028,6 +2026,7 @@ C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Xml.XmlSerializer.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Xml.XPath.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Xml.XPath.XDocument.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\Antlr3.Runtime.dll
+C:\Users\PC\source\repos\QLHV\QLHV\bin\Aspose.Words.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\Aspose.Words.Pdf2Word.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\EntityFramework.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\EntityFramework.SqlServer.dll
@@ -2042,6 +2041,7 @@ C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Web.WebPages.Deployment.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Web.WebPages.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Web.WebPages.Razor.dll
 C:\Users\PC\source\repos\QLHV\QLHV\bin\WebGrease.dll
+C:\Users\PC\source\repos\QLHV\QLHV\bin\Aspose.Words.xml
 C:\Users\PC\source\repos\QLHV\QLHV\bin\EntityFramework.xml
 C:\Users\PC\source\repos\QLHV\QLHV\bin\EntityFramework.SqlServer.xml
 C:\Users\PC\source\repos\QLHV\QLHV\bin\System.Web.Helpers.xml

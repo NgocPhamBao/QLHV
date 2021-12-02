@@ -39,7 +39,7 @@
                                                 @using (Html.BeginForm("UpdateAvatar", "QuanLyHoiVien", FormMethod.Post, new { enctype = "multipart/form-data" }))
                                                 {
                                                     <div id="profile-container">
-                                                        <input  type="file" name="postedFile" id="file" onchange="readURL(this);" style="margin-bottom:5%; background-color:rgba(234, 247, 231, 0.1); width:135%">
+                                                        <input type="file" name="postedFile" id="file" onchange="readURL(this);" style="margin-bottom:5%; background-color:rgba(234, 247, 231, 0.1); width:135%">
                                                         @if (TTCN.Anh == null)
                                                         {
                                                             <img id="blah" src="~/Models/ImageFile/tải xuống.png" style="margin:8% 2%">
@@ -118,35 +118,74 @@
                                                                                 </div>
                                                                                 <div class="form-group col-md-4 col-12">
                                                                                     <label style="color:black; font-size:14px">Loại hội viên<span style="color:red">*</span></label>
-                                                                                    <input type="search" list="LHVdata" name="TenLHV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenLHV'>
-                                                                                    <datalist id="LHVdata">
+                                                                                    <select id="LHVdata" name="TenLHV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenLHV)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenLHV == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenLHV == TTCN.TenLHV)
+                                                                                                {
+                                                                                                    <option value="@i.MaLHV" selected>@i.TenLHV</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaLHV">@i.TenLHV</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessageFor(x => x.TenLHV, "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 <div class="form-group col-md-4 col-12">
                                                                                     <label style="color:black; font-size:14px">Đơn vị<span style="color:red">*</span></label>
-                                                                                    <input type="search" list="DVdata" name="TenDV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenDV'>
-                                                                                    <datalist id="DVdata">
+                                                                                    <select id="DVdata" name="TenDV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenDV)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenDV == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenDV == TTCN.TenDV)
+                                                                                                {
+                                                                                                    <option value="@i.MaDV" selected>@i.TenDV</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaDV">@i.TenDV</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("TenDV", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 <div class="form-group col-md-4 col-12">
                                                                                     <label style="color:black; font-size:14px">Bậc thợ</label>
-                                                                                    <input type="search" list="BacThodata" name="BacTho" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.BacTho'>
-                                                                                    <datalist id="BacThodata">
+                                                                                    <select id="BacThodata" name="BacTho" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.BacTho)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.BacTho == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i == TTCN.BacTho)
+                                                                                                {
+                                                                                                    <option value="@i" selected>@i</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i">@i</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("BacTho", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 <div class="form-group col-md-6 col-12">
@@ -159,20 +198,26 @@
                                                                                 </div>
                                                                                 <div class="form-group col-md-6 col-12">
                                                                                     <label style="color:black; font-size:14px">Hội phụ nữ</label>
-                                                                                    @if (TTCN.TenHPN != null)
-                                                                                    {
-                                                                                        <input type="search" list="HPNdata" name="TenHPN" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenHPN'>
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        //<input type="search" list="HPNdata" id="TenHPN" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='Không'>
-                                                                                    }
-                                                                                    <datalist id="HPNdata">
+                                                                                    <select id="HPNdata" name="TenHPN" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenHPN)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenHPN == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenHPN == TTCN.TenHPN)
+                                                                                                {
+                                                                                                    <option value="@i.MaHPN" selected>@i.TenHPN</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaHPN">@i.TenHPN</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("TenHPN", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 @*<div class="form-group col-md-6 col-12">
@@ -197,72 +242,104 @@
                                                                             <div class="row">
                                                                                 <div class="form-group col-md-6 col-12">
                                                                                     <label style="color:black; font-size:14px">Loại đảng viên</label>
-                                                                                    <input type="search" list="LDVdata" name="TenLDV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenLDV'>
-                                                                                    <datalist id="LDVdata">
+                                                                                    <select id="LDVdata" name="TenLDV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenLDV)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenLDV == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenLDV == TTCN.TenLDV)
+                                                                                                {
+                                                                                                    <option value="@i.MaLDV" selected>@i.TenLDV</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaLDV">@i.TenLDV</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                        }
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("TenLDV", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 <div class="form-group col-md-6 col-12">
                                                                                     <label style="color:black; font-size:14px">Vị trí trong Chi bộ</label>
-                                                                                    @if (TTCN.TenVTCB != null)
-                                                                                    {
-                                                                                        <input type="search" list="VTCBdata" name="TenVTCB" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenVTCB'>
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        //<input type="search" list="VTCBdata" name="TenVTCB" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='Không'>
-                                                                                    }
-                                                                                    <datalist id="VTCBdata">
+                                                                                    <select id="VTCBdata" name="TenVTCB" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenVTCB)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenVTCB == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenVTCB == TTCN.TenVTCB)
+                                                                                                {
+                                                                                                    <option value="@i.MaVTCB" selected>@i.TenVTCB</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaVTCB">@i.TenVTCB</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("TenVTCB", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 <div class="form-group col-md-6 col-12">
                                                                                     <label style="color:black; font-size:14px">Vị trí trong Đảng uỷ</label>
-                                                                                    @if (TTCN.TenVTDU != null)
-                                                                                    {
-                                                                                        <input type="search" list="VTDUdata" name="TenVTDU" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenVTDU'>
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                       // <input type="search" list="VTDUdata" name="TenVTDU" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='Không'>
-                                                                                    }
-                                                                                    <datalist id="VTDUdata">
+                                                                                    <select id="VTDUdata" name="TenVTDU" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenVTDU)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenVTDU == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenVTDU == TTCN.TenVTDU)
+                                                                                                {
+                                                                                                    <option value="@i.MaVTDU" selected>@i.TenVTDU</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaVTDU">@i.TenVTDU</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("TenVTDU", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                                 <div class="form-group col-md-6 col-12">
                                                                                     <label style="color:black; font-size:14px">Vị trí trong các tổ chức đoàn thể</label>
-                                                                                    @if (TTCN.TenVTDT != null)
-                                                                                    {
-                                                                                        <input type="search" list="VTDTdata" name="TenVTDT" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.TenVTDT'>
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        //<input type="search" list="VTDTdata" name="TenVTDT" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='Không'>
-                                                                                    }
-                                                                                    <datalist id="VTDTdata">
+                                                                                    <select id="VTDTdata" name="TenVTDT" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
                                                                                         @foreach (var i in Model.TenVTDT)
                                                                                         {
-                                                                                            <option>@i</option>
+                                                                                            if (TTCN.TenVTDT == null)
+                                                                                            {
+                                                                                                <option value="0"></option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (i.TenVTDT == TTCN.TenVTDT)
+                                                                                                {
+                                                                                                    <option value="@i.MaVTDT" selected>@i.TenVTDT</option>
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    <option value="@i.MaVTDT">@i.TenVTDT</option>
+                                                                                                }
+                                                                                            }
                                                                                         }
-                                                                                    </datalist>
+                                                                                    </select>
                                                                                     @Html.ValidationMessage("TenVTDT", "", new { @class = "text-danger" })
                                                                                 </div>
                                                                             </div>
                                                                             <div class="card-footer text-right">
-                                                                                <button class="btn btn-success"  style="box-shadow: 1px 1px 1px rgb(241, 248, 241)" onclick="UpdateTTCN();">Lưu thay đổi</button>
+                                                                                <button class="btn btn-success" style="box-shadow: 1px 1px 1px rgb(241, 248, 241)" onclick="UpdateTTCN();">Lưu thay đổi</button>
                                                                             </div>
                                                                         </div>
                                                                     </form>
@@ -276,6 +353,7 @@
                                                                     CẤP BẬC
                                                                 </p>
                                                                 <div class="table-responsive">
+                                                                    <button class="btn btn-sm" title="ThêM" data-toggle="modal" data-target="#model-capbac"><i class="fa fa-edit"></i></button>
                                                                     <table id="CB" class="table table-hover table-bordered table-vcenter mb-0 text-nowrap" style="color:black">
                                                                         <thead>
                                                                             <tr>
@@ -419,22 +497,22 @@
                                                                             }
                                                                             else if (HCGD.HoNgheo == true)
                                                                             {
-                                                                                <input type="text" class="form-control" name="HoNgheo"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Hộ nghèo">
+                                                                                <input type="text" class="form-control" name="HoNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Hộ nghèo">
                                                                             }
                                                                             else if (HCGD.HoCanNgheo == true)
                                                                             {
-                                                                                <input type="text" class="form-control" name="HoCanNgheo"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Hộ cận nghèo">
+                                                                                <input type="text" class="form-control" name="HoCanNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Hộ cận nghèo">
                                                                             }
                                                                             else
                                                                             {
-                                                                                <input type="text" class="form-control" name="HoCanNgheo"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">
+                                                                                <input type="text" class="form-control" name="HoCanNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">
                                                                             }
                                                                         </div>
                                                                         <div class="form-group col-md-6 col-12">
                                                                             <label style="color:black; font-size:14px">Kết hôn</label>
                                                                             @if (HCGD.DaKetHon == null)
                                                                             {
-                                                                                <input type="text" class="form-control" name="DaKetHon"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống">
+                                                                                <input type="text" class="form-control" name="DaKetHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống">
                                                                             }
                                                                             else if (HCGD.DaKetHon == true)
                                                                             {
@@ -453,11 +531,11 @@
                                                                             }
                                                                             else if (HCGD.LyHon == false)
                                                                             {
-                                                                                <input type="text" class="form-control"  name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">
+                                                                                <input type="text" class="form-control" name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">
                                                                             }
                                                                             else
                                                                             {
-                                                                                <input type="text" class="form-control"  name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">
+                                                                                <input type="text" class="form-control" name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">
                                                                             }
                                                                         </div>
                                                                         <div class="form-group col-md-6 col-12">
@@ -483,11 +561,11 @@
                                                                             }
                                                                             else if (HCGD.MatChongVo == false)
                                                                             {
-                                                                                <input type="text" class="form-control"  name="MatChongVo"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">
+                                                                                <input type="text" class="form-control" name="MatChongVo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">
                                                                             }
                                                                             else
                                                                             {
-                                                                                <input type="text" class="form-control" name="MatChongVo"   style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">
+                                                                                <input type="text" class="form-control" name="MatChongVo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">
                                                                             }
                                                                         </div>
                                                                         <div class="form-group col-md-6 col-12">
@@ -513,7 +591,7 @@
                                                                             }
                                                                             else
                                                                             {
-                                                                                <input type="text" class="form-control" name="BenhAnBanThan"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@HCGD.BenhAnBanThan'>
+                                                                                <input type="text" class="form-control" name="BenhAnBanThan" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@HCGD.BenhAnBanThan'>
                                                                             }
                                                                         </div>
                                                                         <div class="form-group col-md-6 col-12">
@@ -524,22 +602,22 @@
                                                                             }
                                                                             else
                                                                             {
-                                                                                <input type="text" class="form-control" name="BenhAnConCai"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@HCGD.BenhAnConCai'>
+                                                                                <input type="text" class="form-control" name="BenhAnConCai" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@HCGD.BenhAnConCai'>
                                                                             }
                                                                         </div>
                                                                         <div class="form-group col-md-6 col-12">
                                                                             <label style="color:black; font-size:14px">Khả năng sửa chữa nhà cửa bị hư hỏng </label>
                                                                             @if (HCGD.NhaCua == null)
                                                                             {
-                                                                                <input type="text" class="form-control" name="NhaCua"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống">
+                                                                                <input type="text" class="form-control" name="NhaCua" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống">
                                                                             }
                                                                             else if (HCGD.NhaCua == true)
                                                                             {
-                                                                                <input type="text" class="form-control" name="NhaCua"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Đáp ứng khả năng">
+                                                                                <input type="text" class="form-control" name="NhaCua" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Đáp ứng khả năng">
                                                                             }
                                                                             else
                                                                             {
-                                                                                <input type="text" class="form-control" name="NhaCua"  style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không có khả năng">
+                                                                                <input type="text" class="form-control" name="NhaCua" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không có khả năng">
                                                                             }
                                                                         </div>
                                                                     </div>
@@ -633,17 +711,17 @@
         var DanToc = $('input[name="DanToc"]').val();
         var NgaySinh = $('input[name="NgaySinh"]').val();
         var NamNhapNgu = $('input[name="NamNhapNgu"]').val();
-        var TenLHV = $('input[name="TenLHV"]').val();
-        var TenDV = $('input[name="TenDV"]').val();
-        var BacTho = $('input[name="BacTho"]').val();
+        var TenLHV = document.getElementById('LHVData').options[this.selectedIndex].val();
+        var TenDV = document.getElementById('DVdata').options[this.selectedIndex].val();
+        var BacTho = document.getElementById('BacThoData').options[this.selectedIndex].val();
         var Email = $('input[name="Email"]').val();
         var SDT = $('input[name="SDT"]').val();
-        var TenHPN = $('input[name="TenHPN"]').val();
-        var TenLDV = $('input[name="TenLDV"]').val();
-        var TenVTCB = $('input[name="TenVTCB"]').val();
-        var TenVTDU = $('input[name="TenVTDU"]').val();
-        var TenVTDT = $('input[name="TenVTDT"]').val();
-        alert(file);
+        var TenHPN = document.getElementById('HPNdata').options[this.selectedIndex].val();
+        var TenLDV = document.getElementById('LDVData').options[this.selectedIndex].val();
+        var TenVTCB = document.getElementById('VTCBData').options[this.selectedIndex].val();
+        var TenVTDU = document.getElementById('VTDUData').options[this.selectedIndex].val();
+        var TenVTDT = document.getElementById('VTDTVData').options[this.selectedIndex].val();
+
         $.ajax({
             url: '/QuanLyHoiVien/ChinhSuaHoiVien/',
             dataType: 'json',
@@ -663,7 +741,7 @@
         var MaHV = $('input[name="MaHV"]').val();
         var HoNgheo = $('input[name="HoNgheo"]').val();
         var HoCanNgheo = $('input[name="HoCanNgheo"]').val();
-        var DaKetHon= $('input[name="DaKetHon"]').val();
+        var DaKetHon = $('input[name="DaKetHon"]').val();
         var LyHon = $('input[name="LyHon"]').val();
         var VoChong = $('input[name="VoChong"]').val();
         var MatChongVo = $('input[name="MatChongVo"]').val();
@@ -671,7 +749,7 @@
         var BenhAnBanThan = $('input[name="BenhAnBanThan"]').val();
         var BenhAnConCai = $('input[name="BenhAnConCai"]').val();
         var NhaCua = $('input[name="NhaCua"]').val();
-        
+
         $.ajax({
             url: '/QuanLyHoiVien/ChinhSuaHoiVienHCGD/',
             dataType: 'json',
@@ -687,33 +765,67 @@
             }
         });
     };
+
 </script>
 <div class="modal fade" id="model-donvi" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h6 class="title-modal-banve" id="largeModalLabel">Thêm mới đơn vị</h6>
-            </div>
-            <div class="modal-body">
-                <div class="row clearfix">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="">Mã đơn vị</label>
-                            <input type="text" class="form-control" id="id_donvi" placeholder="Mã đơn vị" value="" required="">
+            <form method="post" action="/QuanLyHoiVien/ThemCapbac">
+                <div class="modal-header">
+                    <h6 class="title-modal-banve" id="largeModalLabel">Thêm mới đơn vị</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="row clearfix">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Mã đơn vị</label>
+                                <input type="text" class="form-control" name="" id="id_donvi" placeholder="Mã đơn vị" value="" required="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="">Tên đơn vị</label>
-                            <input type="text" class="form-control" id="name_donvi" placeholder="Tên đơn vị" value="" required="">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Tên đơn vị</label>
+                                <input type="text" class="form-control" id="name_donvi" placeholder="Tên đơn vị" value="" required="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="onCLickAddItemDonVi()" id="btn-success-modal">Thêm mới</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal" id="btn-success-modal">Thêm mới</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="model-capbac" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="post" action="/QuanLyHoiVien/ThemCapbac">
+                <div class="modal-header">
+                    <h6 class="title-modal-banve" id="largeModalLabel">Thêm mới cấp bâc</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="row clearfix">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Tên cấp bậc</label>
+                                <input type="text" class="form-control" name="TenCapbac" placeholder="Tên Cấp Bậc" value="" required="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Ngày Nhận</label>
+                                <input type="text" class="form-control" name="NgayNhan" placeholder="Ngày Nhận" value="" required="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id="btn-success-modal">Thêm mới</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

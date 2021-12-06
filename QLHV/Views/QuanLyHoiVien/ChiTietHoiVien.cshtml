@@ -1,0 +1,801 @@
+﻿@using QLHV.Models.ViewModels.QuanLyhoiVien;
+@model  CTHV_ThongTinCaNhan
+@{ 
+    var TTCN = ViewBag.TTCN as QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_ThongTinCaNhanPost;
+    var LSCB = ViewBag.LSCB as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_CapBac>;
+    var LSCD = ViewBag.LSCD as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_ChucDanh>;
+    var LSDH = ViewBag.LSDH as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_DanhHieu>;
+    var LSTD = ViewBag.LSTD as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_TrinhDo>;
+    var HCGD = ViewBag.HCGD as QLHV.Models.Context.HoanCanhGD;
+    var LDST = ViewBag.LDST as List<QLHV.Models.ViewModels.QuanLyhoiVien.CTHV_LDST>; 
+}
+@{ ViewBag.Title = "ChiTietHoiVien";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div id="app">
+    <div class="main-wrapper">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+                <div class="section-header" style="margin-bottom:2%">
+                    <h4 style="color:black; margin:0">THÔNG TIN HỘI VIÊN</h4>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="../DanhSachHoiVien" style="color:rgba(40, 163, 40, 0.8)">Quản lý hội viên</a></div>
+                        <div class="breadcrumb-item active"><a href="../DanhSachHoiVien" style="color:rgba(40, 163, 40, 0.8)">Danh sách hội viên</a></div>
+                        <div class="breadcrumb-item"><a href="#" style="color:rgba(40, 163, 40, 0.8)">Thông tin hội viên</a></div>
+                    </div>
+                </div>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tickets">
+                                        <div class="col-md-2" style="margin-right:3.5%">
+                                            <div style="margin-right:2%">
+                                                <!--anh-->
+                                                @using (Html.BeginForm("UpdateAvatar", "QuanLyHoiVien", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                                {
+                                                    <div id="profile-container">
+                                                        <input type="file" name="postedFile" id="file" onchange="readURL(this);" style="margin-bottom:5%; background-color:rgba(234, 247, 231, 0.1); width:135%">
+                                                        @if (TTCN.Anh == null)
+                                                        {
+                                                            <img id="blah" src="~/Models/ImageFile/tải xuống.png" style="margin:8% 2%"> }
+                                                        else
+                                                        {
+                                                            <img id="blah" src="@Url.Content(TTCN.Anh)" style="margin:8% 2%">
+                                                        }
+                                                    </div> <!---->
+                                                    <h6 style="color:black; text-align:center">@TTCN.TenHV.ToString()</h6>
+                                                    <div class="card-footer text-center">
+                                                        <button class="btn btn-success" type="submit" style="margin-right:1%; box-shadow: 1px 1px 1px rgb(241, 248, 241)">Lưu ảnh</button>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                        <div class="col-10" style="margin-top:2%">
+                                            <div class="col-12 col-lg-12" style="margin-bottom:2%">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link active" id="TTCN-tab" data-toggle="tab" href="#TTCN" role="tab" aria-controls="basicInfo" aria-selected="true" style="color:rgb(26, 136, 32); font-weight:700; font-size:17px">Thông tin cá nhân</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="QTCT-tab" data-toggle="tab" href="#QTCT" role="tab" aria-controls="QTCT" aria-selected="false" style="color:rgb(26, 136, 32); font-weight:700; font-size:17px">Quá trình công tác</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="HCGD-tab" data-toggle="tab" href="#HCGD" role="tab" aria-controls="HCGD" aria-selected="false" style="color:rgb(26, 136, 32); font-weight:700; font-size:17px">Hoàn cảnh gia đình</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="LDST-tab" data-toggle="tab" href="#LDST" role="tab" aria-controls="LDST" aria-selected="false" style="color:rgb(26, 136, 32); font-weight:700; font-size:17px">Lao động sáng tạo</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content ml-1" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="TTCN" role="tabpanel" aria-labelledby="TTCN-tab">
+                                                                <div class="col-12 col-md-12">
+                                                                    <form method="post" action="/QuanLyHoiVien/ChinhSuaHoiVien" class="needs-validation" autocomplete="off">
+                                                                        <div class="card-body" id="Content_CTHV" style="width: 100%">
+                                                                            <div class="row" style="color:black">
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Mã hội viên<span style="color:red">*</span></label>
+                                                                                    <input type="text" name="MaHV" id="MaHV" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: rgba(239, 240, 239, 0.9);" value='@TTCN.MaHV' readonly>
+                                                                                </div>
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Họ tên<span style="color:red">*</span></label>
+                                                                                    <input type="text" name="TenHV" id="TenHV" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@TTCN.TenHV'>
+                                                                                    @Html.ValidationMessage("TenHV", "", new { @class = "text-danger" })
+                                                                                </div>
+                                                                                <div class="form-group col-sm-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Giới tính<span style="color:red">*</span></label>
+                                                                                    @*<input type="search" list="GioiTinhdata" name="GioiTinh" id="GioiTinh" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%" value='@TTCN.GioiTinh'>
+                                                                                    <datalist id="GioiTinhdata">
+                                                                                        @foreach (var i in Model.GioiTinh)
+                                                                                        {
+                                                                                        <option>@i</option>}
+                                                                                    </datalist>*@
+                                                                                    <select id="GioiTinh" name="GioiTinh" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @foreach (var i in Model.GT)
+                                                                                        {
+                                                                                            if (i.MaGT == TTCN.GioiTinh)
+                                                                                            {
+                                                                                                <option value="@i.MaGT" selected>@i.TenGT</option> 
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaGT">@i.TenGT</option>
+                                                                                            }                                                        
+                                                                                         }
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-group col-sm-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Dân tộc</label>
+                                                                                    <input type="text" name="DanToc" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@TTCN.DanToc'>
+                                                                                </div>
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Ngày sinh</label>
+                                                                                    <input type="date" name="NgaySinh" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@TTCN.NgaySinh.ToString("dd/MM/yyyy")'>
+                                                                                </div>
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Năm nhập ngũ</label>
+                                                                                    <input type="number" name="NamNhapNgu" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@TTCN.NamNhapNgu'>
+                                                                                </div>
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Loại hội viên<span style="color:red">*</span></label>
+                                                                                    <select id="LHVdata" name="TenLHV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @foreach (var i in Model.LHV)
+                                                                                        {
+                                                                                            if (i.MaLHV == TTCN.MaLHV)
+                                                                                            {
+                                                                                                <option value="@i.MaLHV" selected>@i.TenLHV</option> 
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaLHV">@i.TenLHV</option>
+                                                                                            }                                                        
+                                                                                         }
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Đơn vị<span style="color:red">*</span></label>
+                                                                                    <select id="DVdata" name="TenDV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @foreach (var i in Model.DV)
+                                                                                        {                                               
+                                                                                            if (i.MaDV == TTCN.MaDV)
+                                                                                            {
+                                                                                                <option value="@i.MaDV" selected>@i.TenDV</option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaDV">@i.TenDV</option>
+                                                                                            }
+                                                                                        }                                                               
+                                                                                    </select>
+                                                                                    @Html.ValidationMessage("TenDV", "", new { @class = "text-danger" })
+                                                                                </div>
+                                                                                <div class="form-group col-md-4 col-12">
+                                                                                    <label style="color:black; font-size:14px">Bậc thợ</label>
+                                                                                    <select id="BacThodata" name="BacTho" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @foreach (var i in Model.BacTho)
+                                                                                        {
+                                                                                            if (i == TTCN.BacTho)
+                                                                                            {
+                                                                                                <option value="@i" selected>@i</option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i">@i</option>
+                                                                                            }
+                                                                                        }                                                                    
+                                                                                    </select>
+                                                                                    @Html.ValidationMessage("BacTho", "", new { @class = "text-danger" })
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Email</label>
+                                                                                    <input type="email" name="Email" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@TTCN.Email'>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Số điện thoại</label>
+                                                                                    <input type="tel" name="SDT" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@TTCN.SDT'>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Hội phụ nữ</label>
+                                                                                    <select id="HPNdata" name="TenHPN" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @if (TTCN.MaHPN == null)
+                                                                                        {
+                                                                                            <option value="0" selected>Không</option>
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <option value="0">Không</option>
+                                                                                        }
+                                                                                        @foreach (var i in Model.HPN)
+                                                                                        {
+                                                                                            if (i.MaHPN == TTCN.MaHPN)
+                                                                                            {
+                                                                                                <option value="@i.MaHPN" selected>@i.TenHPN</option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaHPN">@i.TenHPN</option>
+                                                                                            }
+                                                                                        }                                                               
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                        <label style="color:black; font-size:14px">Công đoàn</label>
+                                                                                        <select id="HCDdata" name="MaHCD" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @if (TTCN.MaHCD == null)
+                                                                                        {
+                                                                                            <option value="0" selected>Không thuộc công đoàn</option>
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <option value="0">Không thuộc công đoàn</option>
+                                                                                        }
+                                                                                        @foreach (var i in Model.HCD)
+                                                                                        {
+                                                                                            if (i.MaHCD == TTCN.MaHCD)
+                                                                                            {
+                                                                                                <option value="@i.MaHCD" selected>@i.TenHCD</option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaHCD">@i.TenHCD</option>
+                                                                                            }                                                                                               
+                                                                                        }
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Loại đảng viên</label>
+                                                                                    <select id="LDVdata" name="MaLDV" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @if (TTCN.MaLDV == null)
+                                                                                        {
+                                                                                            <option value="0" selected>Không</option>
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <option value="0">Không</option>
+                                                                                        }
+                                                                                        @foreach (var i in Model.LDV)
+                                                                                        {
+                                                                                            if (i.MaLDV == TTCN.MaLDV)
+                                                                                            {
+                                                                                                <option value="@i.MaLDV" selected>@i.TenLDV</option>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaLDV">@i.TenLDV</option>
+                                                                                            }                                                                                               
+                                                                                        }
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Vị trí trong Chi bộ</label>
+                                                                                    <select id="VTCBdata" name="TenVTCB" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @if (TTCN.MaVTCB == null)
+                                                                                        {
+                                                                                            <option value="0" selected>Không</option> 
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <option value="0">Không</option> 
+                                                                                        }
+                                                                                        @foreach (var i in Model.VTCB)
+                                                                                        {                                                                                      
+                                                                                            if (i.MaVTCB == TTCN.MaVTCB)
+                                                                                            {
+                                                                                                <option value="@i.MaVTCB" selected>@i.TenVTCB</option> }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaVTCB">@i.TenVTCB</option>
+                                                                                            }
+                                                                                        }
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Vị trí trong Đảng uỷ</label>
+                                                                                    <select id="VTDUdata" name="TenVTDU" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @if (TTCN.MaVTDU == null)
+                                                                                        {
+                                                                                            <option value="0" selected>Không</option> 
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <option value="0">Không</option> 
+                                                                                        }
+                                                                                        @foreach (var i in Model.VTDU)
+                                                                                        {                                                                                            
+                                                                                            if (i.MaVTDU == TTCN.MaVTDU)
+                                                                                            {
+                                                                                                <option value="@i.MaVTDU" selected>@i.TenVTDU</option> 
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaVTDU">@i.TenVTDU</option>
+                                                                                            }
+                                                                                         }
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6 col-12">
+                                                                                    <label style="color:black; font-size:14px">Vị trí trong các tổ chức đoàn thể</label>
+                                                                                    <select id="VTDTdata" name="TenVTDT" style="border: 1px solid rgba(140, 175, 140, 0.8); border-radius:5px; width:100%; height:42px; background-color: white; outline:none; padding-left:5%">
+                                                                                        @if (TTCN.MaVTDT == null)
+                                                                                        {
+                                                                                            <option value="0" selected>Không</option> 
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <option value="0">Không</option> 
+                                                                                        }
+                                                                                        @foreach (var i in Model.VTDT)
+                                                                                        {                                                                                          
+                                                                                            if (i.MaVTDT == TTCN.MaVTDT)
+                                                                                            {
+                                                                                                <option value="@i.MaVTDT" selected>@i.TenVTDT</option> 
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <option value="@i.MaVTDT">@i.TenVTDT</option>
+                                                                                            }
+                                                                                        }
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="card-footer text-right">
+                                                                                <button class="btn btn-success" style="box-shadow: 1px 1px 1px rgb(241, 248, 241)" onclick="UpdateTTCN();">Lưu thay đổi</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="QTCT" role="tabpanel" aria-labelledby="QTCT-tab">
+                                                                <!--Lịch sử cấp bậc-->
+                                                                <p class="section-lead" style="font-size:16px; font-weight:700; color:black; margin-left:1%">
+                                                                    CẤP BẬC
+                                                                </p>
+                                                                <div class="table-responsive">
+                                                                    <button class="btn btn-sm" title="ThêM" data-toggle="modal" data-target="#model-capbac"><i class="fa fa-edit"></i></button>
+                                                                    <table id="CB" class="table table-hover table-bordered table-vcenter mb-0 text-nowrap" style="color:black">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Cấp bậc</th>
+                                                                                <th>Ngày nhận quyết định</th>
+                                                                                <th>Tùy chọn</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                @foreach (var i in LSCB)
+                                                                                {
+                                                                    <td><span class="id">@i.TenCB</span></td>
+                                                                                    <td><span class="name">@i.NgayQD</span></td>
+                                                                                                    <td>
+                                                                                                        <button class="btn btn-sm" title="Sửa" data-toggle="modal" data-target="#model-donvi" onclick="onClickEditDonVi()"><i class="fa fa-edit"></i></button>
+                                                                                                        <button class="btn btn-sm" title="Xoá" onclick="onClickDeleteDonVi()"><i class="fa fa-trash"></i></button>
+                                                                                                    </td>}
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+
+                                                                <!--Lịch sử chức danh-->
+                                                                <br />
+                                                                <p class="section-lead" style="font-size:16px; font-weight:700; color:black; margin-left:1%">
+                                                                    CHỨC DANH
+                                                                </p>
+                                                                <div class="table-responsive">
+                                                                    <table id="CD" class="table table-hover table-bordered table-vcenter mb-0 text-nowrap" style="color:black">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Chức danh</th>
+                                                                                <th>Ngày nhận quyết định</th>
+                                                                                <th>Tùy chọn</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            @foreach (var i in LSCD)
+                                                                            {
+                                                                <tr>
+                                                                    <td><span class="id">@i.TenCD</span></td>
+                                                                    <td><span class="name">@i.NgayQD</span></td>
+                                                                    <td>
+                                                                        <button class="btn btn-sm" title="Sửa" data-toggle="modal" data-target="#model-donvi" onclick="onClickEditDonVi()"><i class="fa fa-edit"></i></button>
+                                                                        <button class="btn btn-sm" title="Xoá" onclick="onClickDeleteDonVi()"><i class="fa fa-trash"></i></button>
+                                                                    </td>
+                                                                </tr>}
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+
+                                                                <!--Lịch sử danh hiệu-->
+                                                                <br />
+                                                                <p class="section-lead" style="font-size:16px; font-weight:700; color:black; margin-left:1%">
+                                                                    DANH HIỆU
+                                                                </p>
+                                                                <div class="table-responsive">
+                                                                    @if (LSDH.Count() == 0)
+                                                                    {
+                                                        <p style="font-size:16px; font-weight:600; color:black; margin-left:5%">
+                                                            (Chưa có danh hiệu)
+                                                        </p> }
+                                                                    else
+                                                                    {
+                                                        <table id="DH" class="table table-hover table-bordered table-vcenter mb-0 text-nowrap" style="color:black">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Tên danh hiệu</th>
+                                                                    <th>Ngày nhận quyết định</th>
+                                                                    <th>Tùy chọn</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @foreach (var i in LSDH)
+                                                                {
+                                                <tr>
+                                                    <td><span class="id">@i.TenDH</span></td>
+                                                    <td><span class="name">@i.NgayQD</span></td>
+                                                    <td>
+                                                        <button class="btn btn-sm" title="Sửa" data-toggle="modal" data-target="#model-donvi" onclick="onClickEditDonVi()"><i class="fa fa-edit"></i></button>
+                                                        <button class="btn btn-sm" title="Xoá" onclick="onClickDeleteDonVi()"><i class="fa fa-trash"></i></button>
+                                                    </td>
+                                                </tr>}
+                                                            </tbody>
+                                                        </table>}
+                                                                </div>
+
+                                                                <!--Lịch sử trình độ-->
+                                                                <br />
+                                                                <p class="section-lead" style="font-size:16px; font-weight:700; color:black; margin-left:1%">
+                                                                    TRÌNH ĐỘ
+                                                                </p>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-hover table-bordered table-vcenter mb-0 text-nowrap" style="color:black">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Trình độ</th>
+                                                                                <th>Ngành học</th>
+                                                                                <th>Trường cấp</th>
+                                                                                <th>Ngày nhận QĐ</th>
+                                                                                <th>Tùy chọn</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            @foreach (var i in LSTD)
+                                                                            {
+                                                                <tr>
+                                                                    <td><span class="id">@i.TenTD</span></td>
+                                                                    <td><span class="id">@i.NganhHoc</span></td>
+                                                                    <td><span class="id">@i.TruongCap</span></td>
+                                                                    <td><span class="name">@i.NgayQD</span></td>
+                                                                    <td>
+                                                                        <button class="btn btn-sm" title="Sửa" data-toggle="modal" data-target="#model-donvi" onclick="onClickEditDonVi()"><i class="fa fa-edit"></i></button>
+                                                                        <button class="btn btn-sm" title="Xoá" onclick="onClickDeleteDonVi()"><i class="fa fa-trash"></i></button>
+                                                                    </td>
+                                                                </tr>}
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="HCGD" role="tabpanel" aria-labelledby="HCGD-tab">
+                                                                @if (HCGD != null)
+                                                                {
+                                                                <div class="row">
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Năm khảo sát (Năm hiện tại)</label>
+                                                                        <input type="text" class="form-control" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: rgba(68, 58, 59, 0.08);" value='@HCGD.Nam' disabled>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Hộ nghèo, hộ cận nghèo</label>
+                                                                        @if (HCGD.HoNgheo == null && HCGD.HoCanNgheo == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="HoNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.HoNgheo == true)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="HoNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Hộ nghèo"> }
+                                                                        else if (HCGD.HoCanNgheo == true)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="HoCanNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Hộ cận nghèo"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="HoCanNgheo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không">}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Kết hôn</label>
+                                                                        @if (HCGD.DaKetHon == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="DaKetHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.DaKetHon == true)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="DaKetHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Đã kết hôn"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="DaKetHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Chưa kết hôn">}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Ly hôn</label>
+                                                                        @if (HCGD.LyHon == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.LyHon == false)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="LyHon" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Vợ/chồng công tác cùng đơn vị</label>
+                                                                        @if (HCGD.VoChong == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="VoChong" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.VoChong == false)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="VoChong" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="VoChong" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Mất chồng/vợ</label>
+                                                                        @if (HCGD.MatChongVo == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="MatChongVo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.MatChongVo == false)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="MatChongVo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="MatChongVo" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Nuôi con một mình</label>
+                                                                        @if (HCGD.NuoiConMotMinh == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="NuoiConMotMinh" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.NuoiConMotMinh == false)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="NuoiConMotMinh" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="NuoiConMotMinh" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Có">}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Tiền sử bệnh án của hội viên</label>
+                                                                        @if (HCGD.BenhAnBanThan == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="BenhAnBanThan" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="BenhAnBanThan" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@HCGD.BenhAnBanThan'>}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Tiền sử bệnh án của con cái</label>
+                                                                        @if (HCGD.BenhAnConCai == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="BenhAnConCai" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="BenhAnConCai" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value='@HCGD.BenhAnConCai'>}
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 col-12">
+                                                                        <label style="color:black; font-size:14px">Khả năng sửa chữa nhà cửa bị hư hỏng </label>
+                                                                        @if (HCGD.NhaCua == null)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="NhaCua" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Trống"> }
+                                                                        else if (HCGD.NhaCua == true)
+                                                                        {
+                                                                            <input type="text" class="form-control" name="NhaCua" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Đáp ứng khả năng"> }
+                                                                        else
+                                                                        {
+                                                                            <input type="text" class="form-control" name="NhaCua" style="color: black; border-color: rgba(140, 175, 140, 0.8); background-color: white;" value="Không có khả năng">}
+                                                                    </div>
+                                                                    <div class="card-footer text-right">
+                                                                        <button class="btn btn-success" style="margin-right:1%; box-shadow: 1px 1px 1px rgb(241, 248, 241)" onclick="UpdateHCGD();">Lưu thay đổi</button>
+                                                                    </div>
+                                                                </div>    
+                                                                }
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="LDST" role="tabpanel" aria-labelledby="LDST-tab">
+                                                                @if (LDST.Count() == 0)
+                                                                {
+                                                    <h6 style="color:black; margin-left:3%; font-size:18px">HỘI VIÊN CHƯA CÓ THÀNH TÍCH TRONG LAO ĐỘNG SÁNG TẠO</h6> }
+                                                                else
+                                                                {
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover table-bordered table-vcenter mb-0 text-nowrap" style="color:black">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Đề tài</th>
+                                                                    <th>Năm</th>
+                                                                    <th>Loại LĐST</th>
+                                                                    <th>Kết quả</th>
+                                                                    <th>Vai trò</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @foreach (var i in LDST)
+                                                                {
+                                                <tr>
+                                                    <td><span class="id">@i.TenDeTai</span></td>
+                                                    <td><span class="id">@i.Nam</span></td>
+                                                    <td><span class="id">@i.TenLoaiLDST</span></td>
+                                                    <td><span class="name">@i.KetQua</span></td>
+                                                    @if (i.ThamGia == 0)
+                                                    {
+                                <td><span class="name">GV hướng dẫn</span></td> }
+                                                    else if (i.ThamGia == 1)
+                                                    {
+                                <td><span class="name">HV chủ trì</span></td> }
+                                                    else
+                                                    {
+                                <td><span class="name">HV tham gia</span></td>}
+                                                </tr>}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $("#profileImage").click(function (e) {
+        $("#imageUpload").click();
+    });
+
+    function fasterPreview(uploader) {
+        if (uploader.files && uploader.files[0]) {
+            $('#profileImage').attr('src',
+                window.URL.createObjectURL(uploader.files[0]));
+        }
+    }
+
+    $("#imageUpload").change(function () {
+        fasterPreview(this);
+    });
+    function UpdateTTCN() {
+        var MaHV = $('input[name="MaHV"]').val();
+        var TenHV = $('input[name="TenHV"]').val();
+        var GioiTinh = document.getElementById('GioiTinh').options[this.selectedIndex].val();
+        var DanToc = $('input[name="DanToc"]').val();
+        var NgaySinh = $('input[name="NgaySinh"]').val();
+        var NamNhapNgu = $('input[name="NamNhapNgu"]').val();
+        var MaLHV = document.getElementById('LHVData').options[this.selectedIndex].val();
+        var MaDV = document.getElementById('DVdata').options[this.selectedIndex].val();
+        var BacTho = document.getElementById('BacThoData').options[this.selectedIndex].val();
+        var Email = $('input[name="Email"]').val();
+        var SDT = $('input[name="SDT"]').val();
+        var MaHPN = document.getElementById('HPNdata').options[this.selectedIndex].val();
+        var MaHCD = document.getElementById('HCDdata').options[this.selectedIndex].val();
+        var MaLDV = document.getElementById('LDVData').options[this.selectedIndex].val();
+        var MaVTCB = document.getElementById('VTCBData').options[this.selectedIndex].val();
+        var MaVTDU = document.getElementById('VTDUData').options[this.selectedIndex].val();
+        var MaVTDT = document.getElementById('VTDTVData').options[this.selectedIndex].val();
+
+        $.ajax({
+            url: '/QuanLyHoiVien/ChinhSuaHoiVien/',
+            dataType: 'json',
+            data: {
+                MaHV: MaHV, TenHV: TenHV, GioiTinh: GioiTinh, DanToc: DanToc, NgaySinh: NgaySinh, NamNhapNgu: NamNhapNgu, MaLHV: MaLHV, MaDV: MaDV, BacTho: BacTho, Email: Email,
+                SDT: SDT, MaHPN: MaHPN, MaHCD: MaHCD, MaLDV: MaLDV, MaVTCB: MaVTCB, MaVTDU: MaVTDU, MaVTDT: MaVTDT
+            },
+            type: 'POST',
+            success: function (response) {
+                if (response.status == true) {
+                    alert("Thay đổi thành công!");
+                }
+                else {
+                    alert("Thay đổi không thành công!");
+                }
+            }
+        });
+    };
+    function UpdateHCGD() {
+        var MaHV = $('input[name="MaHV"]').val();
+        var HoNgheo = $('input[name="HoNgheo"]').val();
+        var HoCanNgheo = $('input[name="HoCanNgheo"]').val();
+        var DaKetHon = $('input[name="DaKetHon"]').val();
+        var LyHon = $('input[name="LyHon"]').val();
+        var VoChong = $('input[name="VoChong"]').val();
+        var MatChongVo = $('input[name="MatChongVo"]').val();
+        var NuoiConMotMinh = $('input[name="NuoiConMotMinh"]').val();
+        var BenhAnBanThan = $('input[name="BenhAnBanThan"]').val();
+        var BenhAnConCai = $('input[name="BenhAnConCai"]').val();
+        var NhaCua = $('input[name="NhaCua"]').val();
+
+        $.ajax({
+            url: '/QuanLyHoiVien/ChinhSuaHoiVienHCGD/',
+            dataType: 'json',
+            data: {
+                MaHV: MaHV, HoNgheo: HoNgheo, HoCanNgheo: HoCanNgheo, DaKetHon: DaKetHon, LyHon: LyHon, VoChong: VoChong, MatChongVo: MatChongVo, NuoiConMotMinh: NuoiConMotMinh,
+                BenhAnBanThan: BenhAnBanThan, BenhAnConCai: BenhAnConCai, NhaCua: NhaCua
+            },
+            type: 'POST',
+            success: function (response) {
+                if (response.status == true) {
+                    alert("Thay đổi thành công!");
+                }
+                else {
+                    alert("Thay đổi không thành công!");
+                }
+            }
+        });
+    };
+
+</script>
+<div class="modal fade" id="model-donvi" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="post" action="/QuanLyHoiVien/ThemCapbac">
+                <div class="modal-header">
+                    <h6 class="title-modal-banve" id="largeModalLabel">Thêm mới đơn vị</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="row clearfix">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Mã đơn vị</label>
+                                <input type="text" class="form-control" name="" id="id_donvi" placeholder="Mã đơn vị" value="" required="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Tên đơn vị</label>
+                                <input type="text" class="form-control" id="name_donvi" placeholder="Tên đơn vị" value="" required="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal" id="btn-success-modal">Thêm mới</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="model-capbac" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="post" action="/QuanLyHoiVien/ThemCapbac">
+                <div class="modal-header">
+                    <h6 class="title-modal-banve" id="largeModalLabel">Thêm mới cấp bâc ngọc</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="row clearfix">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Tên cấp bậc</label>
+                                <input type="text" class="form-control" name="TenCapbac" placeholder="Tên Cấp Bậc" value="" required="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Ngày Nhận</label>
+                                <input type="text" class="form-control" name="NgayNhan" placeholder="Ngày Nhận" value="" required="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id="btn-success-modal">Thêm mới</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<style>
+    table {
+        counter-reset: rowNumber;
+    }
+
+        table tr td:first-child::before {
+            display: inline;
+            counter-increment: rowNumber;
+            content: counter(rowNumber) ".";
+            padding-right: 0.3em;
+            text-align: right;
+        }
+</style>
+

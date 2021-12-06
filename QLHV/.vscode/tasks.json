@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "Content/Chocolat-1.0.4/",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - Content/Chocolat-1.0.4",
+			"detail": "npm run prettier && rollup -c"
+		}
+	]
+}

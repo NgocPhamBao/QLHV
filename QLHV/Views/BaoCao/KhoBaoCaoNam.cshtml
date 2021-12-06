@@ -1,0 +1,262 @@
+﻿@using QLHV.Models.Repository.BaoCaoRes;
+@using Newtonsoft.Json;
+@{
+    ViewBag.Title = "KhoBaoCaoTheoNam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="app" style="color: #000;">
+    <div class="main-wrapper">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+                <div class="section-header">
+                    <h1>Báo cáo thống kê</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="../BaoCao/KhoBaoCaoQuy" style="color:rgba(40, 163, 40, 0.8)">Theo quý</a></div>
+                        <div class="breadcrumb-item active"><a href="#" style="color:rgba(40, 163, 40, 0.8)">Theo năm</a></div>
+                    </div>
+                </div>
+                @*@using (Html.BeginForm("Gen", "Report", FormMethod.Post))
+                    {
+                        <form>*@
+                <div class="section-body" style="background-color:white">
+                    <div class="col-lg-12" style="padding-top:40px; display: flex">
+                        <div class="form-group col-lg-1 text-uppercase text-right" style="padding: 15px 5px 5px 5px;">
+                            <h6>Đơn vị </h6>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group col-lg-12 text-uppercase text-right">
+
+                                <select id="chonHoi" onchange="ChonHoi(this)" value="" aria-controls="dataTables-example" class="form-control input-sm">
+                                    <option selected disabled hidden>-- Chọn đơn vị --</option>
+                                    <optgroup label="Học viện">
+                                        @foreach (Hoi hoi in @ViewBag.DSHoi)
+                                        {
+                                            if (hoi.LoaiHoi == 0)
+                                            {
+                                                <option id="@hoi" value="@JsonConvert.SerializeObject(hoi)">@hoi.TenHoi</option>
+                                            }
+
+                                        }
+                                    </optgroup>
+                                    <optgroup label="Hội phụ nữ">
+                                        @foreach (Hoi hoi in @ViewBag.DSHoi)
+                                        {
+                                            if (hoi.LoaiHoi == 1)
+                                            {
+                                                <option id="@hoi" value="@JsonConvert.SerializeObject(hoi)">@hoi.TenHoi</option>
+                                            }
+
+                                        }
+                                    </optgroup>
+                                    <optgroup label="Công đoàn">
+                                        @foreach (Hoi hoi in @ViewBag.DSHoi)
+                                        {
+                                            if (hoi.LoaiHoi == 2)
+                                            {
+                                                <option id="@hoi" value="@JsonConvert.SerializeObject(hoi)">@hoi.TenHoi</option>
+                                            }
+
+                                        }
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-1  text-uppercase text-right" style="padding: 15px 5px 5px 5px;">
+                            <h6>Năm</h6>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group col-lg-12 text-uppercase text-left">
+                                <select id="chonNam" onchange="ChonBaoCao(this)" value="" aria-controls="dataTables-example" class="form-control input-sm">
+                                    <option selected disabled hidden>-- Chọn năm --</option>
+                                    @*@foreach (BaoCao bc in @ViewBag.BaoCaos)
+                                        {
+                                            <option id="@bc.MaBaoCao" value="@bc.MaBaoCao">@bc.TenBaoCao</option>
+                                        }*@
+                                </select>
+                            </div>
+                        </div>
+                        <!--div class="col-lg-2">
+                            <button type="submit" class="btn btn-raised btn-success text-uppercase" onclick="exportHTML();">-->
+                        @*<button type="submit" class="btn btn-raised btn-success text-uppercase"">*@
+                        <!--<i class="fa fa-check-square-o"></i> Tải Xuống
+                            </button>
+                        </div>-->
+                        <div class="col-lg-4">
+                            <div class="dt-buttons btn-group flex-wrap" style="float: right;">
+                                <button id="btnHuyChot" class="btn btn-secondary buttons-html5 btn-success btn-md " tabindex="0" aria-controls="baoCao" type="button" disabled onclick="HuyChot();">
+                                    <span>Hủy chốt</span>
+                                </button>
+                                <button id="btnXuatWord" class="btn btn-secondary buttons-html5 btn-success btn-md " tabindex="0" aria-controls="baoCao" type="button" disabled onclick="exportHTML();">
+                                    <span>Xuất file word</span>
+                                </button>
+                                <button id="btnIn" class="btn btn-secondary buttons-html5 btn-success btn-md " tabindex="0" aria-controls="baoCao" type="button" disabled onclick="In_Content('secBaoCao')">
+                                    <span>In</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="col-lg-12" style="background-color:white; width: 729px; margin: auto; padding-top:30px">*@
+                    <div class="col-lg-12" style="background-color:white; margin: auto; padding-top:30px">
+                        <article id="secBaoCao">
+                            <div id="baoCao" style=" width: fit-content; margin-left: calc(50% - 340px);">
+
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</div>
+
+<script language="javascript">
+    function ChonBaoCao(obj) {
+        var idBC = obj.value;
+        $.ajax({
+            url: '/BaoCao/PartialViewReport',
+            type: 'GET',
+            data: { idBC: idBC },
+            success: function (response) {
+                console.log("thanh cong");
+                $('#baoCao').empty();
+                $('#baoCao').html(response);
+
+                @*console.log(@TempData["daChot"].toString());*@
+                @*var huychot;
+                if (@TempD["daChot"] == true) huychot = false;
+                else huychot = true;
+                console.log(huychot);*@
+                @*$('#btnHuyChot').prop('disabled', huychot);*@
+
+                $('#btnXuatWord').prop('disabled', false);
+                $('#btnIn').prop('disabled', false);
+                LoadBtnChotByMa(idBC);
+            },
+            error: function (data) {
+                console.log("err" + data);
+            }
+        });
+    }
+
+</script>
+
+<script>
+    function exportHTML() {
+        var header = "<header xmlsn:o= 'urn:schemas-microsoft-com:office:office' " +
+            "xmlns:w='urn:schemas-microsoft-com:office:word' " +
+            "xmlns='http://www.w3.org/TR/REC-html40'>" +
+            "<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScrip</title></head><body>";
+        var footer = "</body></html>";
+        var sourceHTML = header + document.getElementById("baoCao").innerHTML + footer;
+        var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+        var fileDownload = document.createElement("a");
+        document.body.appendChild(fileDownload);
+        fileDownload.href = source;
+        fileDownload.download = 'BaoCaoQuy' + '.doc';
+        fileDownload.click();
+        document.body.removeChild(fileDownload);
+
+    }
+</script>
+
+<script>
+    function In_Content(strid) {
+        var prtContent = document.getElementById(strid);
+        var WinPrint = window.open('', '', 'letf=0,top=0,width=800,height=800');
+        WinPrint.document.write(prtContent.innerHTML);
+        WinPrint.document.close();
+        WinPrint.focus();
+        WinPrint.print();
+    }
+</script>
+
+
+<script language="javascript">
+    function ChonHoi(obj) {
+        var HOI = JSON.parse(obj.value);
+        console.log(HOI.Ma);
+        console.log(HOI.LoaiHoi);
+        console.log(HOI.TenHoi);
+
+        $.ajax({
+            url: '/BaoCao/GetBaoCaoByHoi',
+            type: 'POST',
+            data: { hoi: HOI, theoNam: true },
+            success: function (response) {
+                console.log("thanh cong");
+                console.log(response);
+                var contentSelect = "<option selected disabled hidden>-- Chọn năm --</option>";
+                $.each(response, function (key, item) {
+                    contentSelect = contentSelect + "<option id=";
+                    contentSelect = contentSelect + item.MaBaoCao + " value=" + item.MaBaoCao + ">" + item.TenBaoCao + "</option>";
+                });
+                $('#baoCao').empty();
+                $('#chonNam').html(contentSelect);
+                $('#btnHuyChot').prop('disabled', true);
+                $('#btnXuatWord').prop('disabled', true);
+                $('#btnIn').prop('disabled', true);
+
+            },
+            error: function (data) {
+                console.log("err" + data);
+            }
+        });
+
+
+    }
+</script>
+
+<script>
+    function LoadBtnChotByMa(ma) {
+        console.log(ma);
+        $.ajax({
+            url: '/BaoCao/DaChotKho',
+            type: 'POST',
+            data: { idBC: ma },
+            success: function (response) {
+                console.log(response);
+                if (response == 0) $('#btnHuyChot').prop('disabled', true);
+                else $('#btnHuyChot').prop('disabled', false);
+
+            },
+            error: function (data) {
+                console.log("err" + data);
+            }
+        });
+    }
+</script>
+
+
+<script>
+    function HuyChot() {
+        var obj = $('#chonNam');
+        var idBaoCao = JSON.parse(obj[0].value);
+
+        console.log(idBaoCao);
+        if (confirm("Bạn có chắc chắn muốn chốt báo cáo không? Nhấn OK để xác nhận!"))
+            $.ajax({
+                url: '/BaoCao/HuyChotBaoCao',
+                type: 'POST',
+                data: { idBC: idBaoCao },
+                success: function (response) {
+                    console.log("thanh cong");
+                    $('#btnHuyChot').prop('disabled', true);
+                    //toastSuccess("Chốt báo cáo thành công!");
+                    alert("Hủy chốt báo cáo thành công!");
+                },
+                error: function (data) {
+                    console.log("err" + data);
+                    //toastError("Chốt báo cáo không thành công!");
+                    alert("Hủy chốt báo cáo không thành công!");
+                }
+            });
+    }
+
+</script>
+
+<script src="~/Content/js/jquery-3.6.0.js"></script>
+

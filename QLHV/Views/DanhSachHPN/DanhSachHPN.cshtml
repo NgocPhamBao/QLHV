@@ -1,0 +1,82 @@
+﻿@model List<QLHV.Models.ViewModels.DanhSachCacHoi.DanhSachHPN>
+@{
+    ViewBag.Title = "DanhSachHPN";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="app">
+    <div class="main-wrapper">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+                <div class="section-header">
+                    <h5 style="margin:0; color:black">DANH SÁCH HỘI PHỤ NỮ HỌC VIỆN KỸ THUẬT QUÂN SỰ</h5>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="#" style="color:rgba(40, 163, 40, 0.8)">Danh sách các hội</a></div>
+                        <div class="breadcrumb-item active"><a href="../DanhSachHPN/DanhSachHPN" style="color:rgba(40, 163, 40, 0.8)">Hội phụ nữ</a></div>
+                    </div>
+                </div>
+                <div class="section-body">
+                    <p class="section-lead" style="font-size:18px; margin-left:1%">
+                        Khối Phòng, Ban
+                    </p>
+                    <div class="row">
+                        @foreach (var i in Model)
+                        {
+                            if (i.Khoi == 3)
+                            {
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card card-danger">
+                                        <div class="card-header">
+                                            <a href=/DanhSachHPN/ChiTietHPN/@i.MaHPN style="color:rgb(248, 6, 26)"><h4 style="color:rgb(248, 6, 26)">@i.TenHPN</h4></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <p class="section-lead" style="font-size:18px; margin-left:1%">
+                        Khối Khoa, Viện, Trung tâm
+                    </p>
+                    <div class="row">
+                        @foreach (var i in Model)
+                        {
+                            if (i.Khoi == 2)
+                            {
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card card-success">
+                                        <div class="card-header">
+                                            <a href=/DanhSachHPN/ChiTietHPN/@i.MaHPN style="color:rgb(85, 191, 63)"><h4 style="color:rgb(85, 191, 63)">@i.TenHPN</h4></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <p class="section-lead" style="font-size:18px; margin-left:1%">
+                        Khối quản lý học viên
+                    </p>
+                    <div class="row">
+                        @foreach (var i in Model)
+                        {
+                            if (i.Khoi == 1)
+                            {
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card card-primary">
+                                        <div class="card-header">
+                                            <a href=/DanhSachHPN/ChiTietHPN/@i.MaHPN ><h4 style="color:rgb(47, 60, 156)">@i.TenHPN</h4></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
